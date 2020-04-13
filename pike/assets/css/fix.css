@@ -1,0 +1,99 @@
+.product_d_flex, .product_group {
+	margin-top: 10px;
+}
+.product_d_flex_title {
+	width: 150px;
+	line-height: 1.5;
+}
+.product_d_flex_input {
+	width: 100%;
+} 
+.product_d_flex_input .form-group {
+	margin-bottom: 0;
+}
+.product_d_flex_input .form-group .form-control {
+	border-radius: 0;
+	padding: 3px 10px;
+	height: inherit !important;
+}
+.product_d_flex_input .form-group .form-control option {
+	min-height: inherit;
+}
+.product_d_flex_input input, .product_d_flex_input textarea, .product_d_flex_input select {
+	border-radius: 0;
+	padding: 3px 10px;
+}
+.product_d_flex_input .input-group input {
+	border-radius: 0;
+	padding: 3px 10px;
+}
+.product_d_flex_input .input-group .input-group-append {
+	border-radius: 0;
+	/* padding: 3px 10px; */
+}
+.product_d_flex_input .input-group .input-group-append .input-group-text {
+	border-radius: 0;
+	padding: 3px 10px;
+}
+.product_d_flex_input input:focus, .product_d_flex_input textarea:focus, .product_d_flex_input .form-group .form-control:focus {
+	box-shadow: none;
+}
+.product_group label {
+	margin-bottom: 5px;
+}
+.product_group input, .product_group textarea {
+	border-radius: 0;
+	padding: 3px 10px;
+}
+.product_group input:focus,.product_group textarea:focus {
+	box-shadow: none;
+}
+.product_group {
+	margin-bottom: 0px;
+}
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+	border-radius: 0 !important;
+	border-color: #ddd;
+}
+.select2-container--default .select2-selection--multiple {
+	border-radius: 0 !important;
+	border-color: #ddd;	
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+	border-color: #ddd;	
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	border-color: #ddd;	
+}
+#upload_img {
+	position: relative;
+}
+#upload_img_box {
+	text-align: center;
+	padding: 25px;
+	border: 2px dashed #C8CBCE;
+	color: #97A1A8;
+	cursor: pointer;
+	position: relative;
+	z-index: 998;
+}
+.jFiler-input-text h3 {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+.jFiler-input-choose-btn {
+	color: white !important;
+}
+#prod_img {
+	position: absolute;
+	top: 0;
+	z-index: -999999999999;
+	left: 0;
+}
+.post_content_x {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}

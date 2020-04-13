@@ -1,0 +1,307 @@
+div.wpcf7 {
+    margin: 0;
+    padding: 0;
+}
+
+div.wpcf7 .screen-reader-response {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div.wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+    border: 2px solid #ff0000;
+}
+
+div.wpcf7-mail-sent-ok {
+    border: 2px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng,
+div.wpcf7-aborted {
+    border: 2px solid #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+    border: 2px solid #ffa500;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: 2px solid #f7e700;
+}
+
+.wpcf7-form-control-wrap {
+    position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+    color: #f00;
+    font-size: 1em;
+    font-weight: normal;
+    display: block;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 100;
+    border: 1px solid #ff0000;
+    background: #fff;
+    padding: .2em .8em;
+}
+
+span.wpcf7-list-item {
+    display: inline-block;
+    margin: 0 0 0 1em;
+}
+
+span.wpcf7-list-item-label::before,
+span.wpcf7-list-item-label::after {
+    content: " ";
+}
+
+.wpcf7-display-none {
+    display: none;
+}
+
+div.wpcf7 .ajax-loader {
+    visibility: hidden;
+    display: inline-block;
+    background-image: url('../../images/ajax-loader.gif');
+    width: 16px;
+    height: 16px;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 4px;
+    vertical-align: middle;
+}
+
+div.wpcf7 .ajax-loader.is-active {
+    visibility: visible;
+}
+
+div.wpcf7 div.ajax-error {
+    display: none;
+}
+
+div.wpcf7 .placeheld {
+    color: #888;
+}
+
+div.wpcf7 .wpcf7-recaptcha iframe {
+    margin-bottom: 0;
+}
+
+div.wpcf7 input[type="file"] {
+    cursor: pointer;
+}
+
+div.wpcf7 input[type="file"]:disabled {
+    cursor: default;
+}
+
+div.wpcf7 .wpcf7-submit:disabled {
+    cursor: not-allowed;
+}
+
+.woocommerce ul.products li.product .button.ajax_add_to_cart {
+    width: 125px;
+}
+
+.woocommerce #content table.cart img,
+.woocommerce table.cart img,
+.woocommerce-page #content table.cart img,
+.woocommerce-page table.cart img {
+    width: 40px;
+}
+
+a.checkout-button.button.alt.wc-forward {
+    width: 100%;
+    text-align: center;
+    background-color: #e03232;
+    padding: 15px;
+}
+
+.woocommerce-checkout div#order_review {
+    width: 40%;
+    float: right;
+    padding-left: 20px;
+}
+
+.woocommerce-checkout div#customer_details {
+    width: 60%;
+    float: left;
+}
+
+.notification-card--group-primary {
+    position: relative;
+}
+
+.notification-card {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.25rem 0;
+}
+
+.notification-card--group-primary .notification-card__connector--single {
+    display: none;
+}
+
+.notification-card--group-primary .notification-card__connector {
+    top: 50%;
+}
+
+.notification-card__connector {
+    width: .0625rem;
+    position: absolute;
+    top: 0;
+    left: 3.75rem;
+    bottom: 0;
+    background: rgba(0, 0, 0, .09);
+}
+
+.notification-card__image {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-flow: row-reverse wrap-reverse;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: reverse;
+    -ms-flex-flow: row-reverse wrap-reverse;
+    flex-flow: row-reverse wrap-reverse;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+}
+
+.notification-card__img-background {
+    width: 100%;
+    padding-top: 100%;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.notification-card__detail {
+    word-wrap: break-word;
+    padding-left: 1.25rem;
+    min-width: 0;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    margin-right: .625rem;
+}
+
+.notification-card__title {
+    font-size: 11px;
+    margin-bottom: .625rem;
+    color: rgba(0, 0, 0, .8);
+}
+
+.notification-card__content {
+    font-size: 11px;
+    color: rgba(0, 0, 0, .54);
+    margin-bottom: .3125rem;
+}
+
+.notification-card__info {
+    font-size: 11px;
+    color: rgba(0, 0, 0, .54);
+    line-height: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.notification-card__collapse {
+    cursor: pointer;
+    margin-left: .625rem;
+}
+
+.notification-card__button {
+    margin-left: auto;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.notification-card__button .shopee-button-outline {
+    padding: 0 .4375rem;
+    background-color: #fff;
+    min-width: 5rem;
+    height: 1.875rem;
+    font-size: 10px;
+    text-transform: capitalize;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.shopee-button-outline {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: background-color .1s cubic-bezier(.4, 0, .6, 1);
+    transition: background-color .1s cubic-bezier(.4, 0, .6, 1);
+    border: 1px solid rgba(0, 0, 0, .09);
+    border-radius: 2px;
+    background: transparent;
+    color: rgba(0, 0, 0, .8);
+}
+
+.notification-page__divider--transparent {
+    border-bottom: 1px solid #fff;
+}
+
+.notification-page__divider {
+    margin: 0 1.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .09);
+}

@@ -1,0 +1,936 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Demo theme WordPress bán hàng điện tử, điện máy | Công nghệ cho cuộc sống</title>
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel='stylesheet' href='css/styles.css?ver=5.0.4' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/setup_css.css' type='text/css' />
+    <link rel='stylesheet' href='css/devvn-quick-buy.css?ver=2.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/woocommerce-layout.css?ver=3.4.5' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/woocommerce-smallscreen.css?ver=3.4.5' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' href='css/woocommerce.css?ver=3.4.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css' href='css/devvn_style.css?ver=1.02' type='text/css' media='all' />
+    <link rel='stylesheet' id='respon-css' href='css/respon.css?ver=1.02' type='text/css' media='all' />
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+    <link rel="icon" href="images/logo.png" sizes="32x32" />
+    <link rel="icon" href="images/logo.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo.png" />
+    <meta name="msapplication-TileImage" content="images/logo.png" />
+    <script>
+        jQuery( document ).ready(function() {
+        jQuery('img[data-lazy-src]').each(function() 
+        {  
+              var imgsrc = jQuery(this).attr("data-lazy-src");
+              jQuery(this).attr('src',imgsrc);
+        });    
+    var tbay_bottom_header = jQuery('header.header');
+   
+        var CurrentScroll = 0;
+        var tbay_width = jQuery(window).width();
+        var header_height = tbay_bottom_header.height();
+       
+        jQuery(window).scroll(function() {
+            if(tbay_width <= 767) {
+                //alert('ss');
+                var NextScroll = jQuery(this).scrollTop();
+                if (NextScroll > header_height + 30) {
+                    tbay_bottom_header.addClass('sticky-header');
+                  
+                } else {
+                    tbay_bottom_header.removeClass('sticky-header');
+                   
+                }
+               
+            }
+        });
+    });
+    
+    </script>
+</head>
+
+<body data-rsssl=1 class="home woocommerce page-template page-template-templates page-template-home-default page-template-templateshome-default-php page page-id-409 woocommerce-no-js devvn_desktop sidebar_to_menu logo_menu_stick">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header class="header">
+        <div class="top_header">
+            <div class="container">
+                <div class="top_header_left"><i class="fa fa-envelope-open" aria-hidden="true"></i> info@tech360.vn</div>
+                <div class="top_header_middle"><i class="fa fa-phone-square" aria-hidden="true"></i> 0888.090.898</div>
+                <div class="top_header_right"><i class="fa fa-facebook-official" aria-hidden="true"></i> fb.com/tech360</div>
+            </div>
+        </div>
+        <div class="main_header">
+            <div class="container">
+                <h2 class="logo">
+                    <a href="/" title="Công nghệ cho cuộc sống"><img src="images/logo.png" alt="Demo theme Wordpress bán hàng điện tử, điện máy" /></a>
+                </h2>
+                <div class="search_header">
+                    <form role="search" method="get" class="woocommerce-product-search" action="/">
+                        <input type="search" id="woocommerce-product-search-field" class="search-field" placeholder="Tìm kiếm sản phẩm" value="" name="s" title="Search for:" />
+                        <button type="submit" class="btn btn-default" id="searchsubmit">Tìm kiếm</button>
+                        <input type="hidden" name="post_type" value="product" />
+                    </form>
+                </div>
+                <div class="cart_header woocommerce">
+                    <div class="popup_cart_hover">
+                        <a class="cart-contents" href="/gio-hang/" title="Hiển thị giỏ hàng">
+                            <span>Giỏ hàng của bạn</span>
+                            <small>Chưa có sản phẩm</small>
+                        </a>
+                        <div class="popup_cart">
+                            <ul class="cart_list product_list_widget ">
+                                <li class="empty">Chưa có sản phẩm trong giỏ hàng.</li>
+                            </ul><!-- end product list -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_header_wrap">
+            <div class="container">
+                <div class="danhmuc_sanpham_menu">
+                    <h3 class="title-sidebar click_open_mega">Danh mục sản phẩm<i class="fa fa-bars"></i></h3>
+                    <div class="devvn_mega_menu_wrap">
+                        <div class="devvn_mega_menu_box">
+                            <ul class="devvn_mega_menu_ul">
+                                <li class="">
+                                    <a href="#" title="Android TV Box"><i class="devvn_mega_menu_icon" style="background: url(images/android_box.png) no-repeat center center;"></i>Android TV Box</a>
+                                    <i class="click_open_sub_megamenu">+</i>
+                                    <div class="devvn_sub_mega_content" style="background: #fff url(images/androidbox.png) no-repeat right bottom;">
+                                        <div class="devvn_sub_mega_content_box devvn-megamenu-3-column">
+                                            <div class="devvn-mega-sub-column-3 devvn_sub_mega_content_column">
+                                                <div class="devvn_mega_menu_title">
+                                                    <h2>Sub menu 1</h2>
+                                                    <ul>
+                                                        <li><a href="#" title="Sub menu  dm1">Sub menu dm1</a></li>
+                                                        <li><a href="#" title="Sub menu 1">Sub menu 1</a></li>
+                                                        <li><a href="#" title="Sub menu 1">Sub menu 1</a></li>
+                                                        <li><a href="#" title="Sub menu 1">Sub menu 1</a></li>
+                                                        <li><a href="" title="sub 121331">sub 121331</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="devvn-mega-sub-column-3 devvn_sub_mega_content_column">
+                                                <div class="devvn_mega_menu_title">
+                                                    <h2>Sub menu 2</h2>
+                                                    <ul>
+                                                        <li><a href="#" title="Sub menu 2">Sub menu 2</a></li>
+                                                        <li><a href="#" title="Sub menu 2">Sub menu 2</a></li>
+                                                        <li><a href="#" title="Sub menu 2">Sub menu 2</a></li>
+                                                        <li><a href="#" title="Sub menu 2">Sub menu 2</a></li>
+                                                        <li><a href="#" title="Sub menu 2">Sub menu 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="no-have-mega">
+                                    <a href="#" title="Phụ Kiện Android Box"><i class="devvn_mega_menu_icon" style="background: url(images/phu_kien_android_box.png) no-repeat center center;"></i>Phụ Kiện Android Box</a>
+                                    <i class="click_open_sub_megamenu">+</i>
+                                    <ul class="devvn_sub_menu">
+                                        <li>
+                                            <a href="#" title="Phụ kiện 1">Phụ kiện 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Phụ kiện 2">Phụ kiện 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Phụ kiện 3">Phụ kiện 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="no-have-mega">
+                                    <a href="#" title="Camera Thông Minh"><i class="devvn_mega_menu_icon" style="background: url(images/camera_thong_minh.png) no-repeat center center;"></i>Camera Thông Minh</a>
+                                </li>
+                                <li class="no-have-mega">
+                                    <a href="#" title="Kính Thực Tế Ảo"><i class="devvn_mega_menu_icon" style="background: url(images/141230510593.png) no-repeat center center;"></i>Kính Thực Tế Ảo</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" title="Smart Watch"><i class="devvn_mega_menu_icon" style="background: url(images/smart_watch.png) no-repeat center center;"></i>Smart Watch</a>
+                                    <i class="click_open_sub_megamenu">+</i>
+                                    <div class="devvn_sub_mega_content" style="background: #fff url(images/camera_thong_minh_to.png) no-repeat right bottom;">
+                                        <div class="devvn_sub_mega_content_box devvn-megamenu-3-column">
+                                            <div class="devvn-mega-sub-column-3 devvn_sub_mega_content_column">
+                                                <div class="devvn_mega_menu_title">
+                                                    <h2>Sub Smart Watch</h2>
+                                                    <ul>
+                                                        <li><a href="#" title="Smart Watch 1">Smart Watch 1</a></li>
+                                                        <li><a href="#" title="Smart Watch 2">Smart Watch 2</a></li>
+                                                        <li><a href="#" title="Smart Watch">Smart Watch</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="devvn-mega-sub-column-3 devvn_sub_mega_content_column">
+                                                <div class="devvn_mega_menu_title">
+                                                    <h2>Sub Smart Watch 2</h2>
+                                                    <ul>
+                                                        <li><a href="" title="Sub Smart Watch">Sub Smart Watch</a></li>
+                                                        <li><a href="" title="Sub Smart Watch 2 2">Sub Smart Watch 2 2</a></li>
+                                                        <li><a href="" title="Sub Smart Watch 2 3">Sub Smart Watch 2 3</a></li>
+                                                        <li><a href="" title="Sub Smart Watch 2 4">Sub Smart Watch 2 4</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="no-have-mega">
+                                    <a href="#" title="Android TV Box"><i class="devvn_mega_menu_icon" style="background: url(images/android_box.png) no-repeat center center;"></i>Android TV Box</a>
+                                </li>
+                                <li class="no-have-mega">
+                                    <a href="#" title="Android TV Box"><i class="devvn_mega_menu_icon" style="background: url(images/141230510593.png) no-repeat center center;"></i>Android TV Box</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="button_open_menu"><i class="fa fa-bars"></i> Menu</a>
+                <div class="menu_header">
+                    <ul id="menu-main-menu" class="menu">
+                        <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-31"><a href="/trang-chu/">Trang chủ</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-452"><a href="/trang-chu/">Trang chủ 1 – Full width</a></li>
+                                <li id="menu-item-422" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-422"><a href="/trang-chu-2/">Trang chủ 2 – Full width + Product Menu</a></li>
+                                <li id="menu-item-421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-409 current_page_item menu-item-421"><a href="/">Trang chủ 3 – Mặc định – Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-29"><a href="/tin-tuc/">Tin tức</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-181" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-181"><a href="/category/camera-thong-minh/">Camera Thông Minh</a></li>
+                                <li id="menu-item-180" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-180"><a href="/category/android-box/">Android Box</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-183" class="menu-item menu-item-type-post_type_archive menu-item-object-videos menu-item-183"><a href="/videos/">Videos</a></li>
+                        <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="/ho-tro-khach-hang/">Hỗ trợ khách hàng</a></li>
+                        <li id="menu-item-232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232"><a href="/he-thong-dai-ly/">Hệ thống đại lý</a></li>
+                        <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="/lien-he/">Liên hệ</a></li>
+                        <li id="menu-item-516" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-516"><a href="/tai-khoan/">Tài khoản</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="end_navpage"></div>
+    </header>
+    <!-- Thay đổi ở đây -->
+    <div class="main_body">
+        <div class="container">
+            <div class="row row-padding-15">
+                <div id="container" class="main_container col-md-9 col-sm-9 col-xs-12 col-sm-push-3">
+                    <div id="content" role="main">
+                        <nav class="woocommerce-breadcrumb"><a href="https://dienmay2.trustweb.vn">Trang chủ</a>&nbsp;&#47;&nbsp;<a href="/danh-muc/android-tv-box/">Android TV Box</a>&nbsp;&#47;&nbsp;<a href="/danh-muc/android-tv-box/android-box-minix/">Minix</a>&nbsp;&#47;&nbsp;IP CAMERA BÁO ĐỘNG CHỐNG TRỘM QF004 HD WIFI</nav>
+                        <div id="product-90" class="post-90 product type-product status-publish has-post-thumbnail product_cat-android-tv-box product_cat-camera-thong-minh product_cat-kinh-thuc-te-ao product_cat-android-box-kiwibox product_cat-loa-am-thanh product_cat-may-chieu-phu-kien product_cat-may-chieu-android product_cat-android-box-minix product_cat-phu-kien-android-box product_cat-phu-kien-ket-noi-chuyen-doi product_cat-pin-sac-du-phong product_cat-san-pham-thong-minh product_cat-san-pham-xiaomi product_cat-smart-watch product_cat-thiet-bi-truyen-hinh-tv first instock sale featured shipping-taxable purchasable product-type-simple">
+                            <div class="row row-padding-15">
+                                <div class="col-md-9 col-sm-12 col-xs-12 product-left">
+                                    <div class="img-product clearfix">
+                                        <span class="onsale">Giảm giá!</span>
+                                        <div class="images">
+                                            <div id="product_slider" class="owl-carousel">
+                                                <div class="item">
+                                                    <a href="images/ipcam-qf004-4-20160517042804.jpg" itemprop="image" class="woocommerce-main-image zoom single-product-lightbox" title="" rel="single-gallery" data-rel="prettyPhoto[product-gallery]"><img width="600" height="600" src="images/ipcam-qf004-4-20160517042804-600x600.jpg" class="attachment-shop_single size-shop_single wp-post-image" alt="" title="ipcam-qf004-4-20160517042804" srcset="images/ipcam-qf004-4-20160517042804-600x600.jpg 600w, images/ipcam-qf004-4-20160517042804-300x300.jpg 300w, images/ipcam-qf004-4-20160517042804-100x100.jpg 100w, /images/ipcam-qf004-4-20160517042804-150x150.jpg 150w, /images/ipcam-qf004-4-20160517042804-180x180.jpg 180w, images/ipcam-qf004-4-20160517042804.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" /></a> </div>
+                                                <div class="item"><a href="images/ipcam-qf004-4-20160517042804.jpg" class="zoom single-product-lightbox" title="" rel="single-gallery" data-rel="prettyPhoto[product-gallery]"><img width="600" height="600" src="images/ipcam-qf004-4-20160517042804-600x600.jpg" class="attachment-shop_single size-shop_single" alt="" title="ipcam-qf004-4-20160517042804" caption="" url="images/ipcam-qf004-4-20160517042804.jpg" srcset="images/ipcam-qf004-4-20160517042804-600x600.jpg 600w, images/ipcam-qf004-4-20160517042804-300x300.jpg 300w, images/ipcam-qf004-4-20160517042804-100x100.jpg 100w, /images/ipcam-qf004-4-20160517042804-150x150.jpg 150w, /images/ipcam-qf004-4-20160517042804-180x180.jpg 180w, images/ipcam-qf004-4-20160517042804.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" full_src="images/ipcam-qf004-4-20160517042804.jpg" full_src_w="800" full_src_h="800" gallery_thumbnail_src="images/ipcam-qf004-4-20160517042804-100x100.jpg" gallery_thumbnail_src_w="100" gallery_thumbnail_src_h="100" thumb_src="images/ipcam-qf004-4-20160517042804-300x300.jpg" thumb_src_w="300" thumb_src_h="300" src_w="600" src_h="600" /></a></div>
+                                                <div class="item"><a href="images/ipcam-qf004-8-20160517042804.jpg" class="zoom single-product-lightbox" title="" rel="single-gallery" data-rel="prettyPhoto[product-gallery]"><img width="600" height="600" src="images/ipcam-qf004-8-20160517042804-600x600.jpg" class="attachment-shop_single size-shop_single" alt="" title="ipcam-qf004-8-20160517042804" caption="" url="images/ipcam-qf004-8-20160517042804.jpg" srcset="images/ipcam-qf004-8-20160517042804-600x600.jpg 600w, images/ipcam-qf004-8-20160517042804-300x300.jpg 300w, images/ipcam-qf004-8-20160517042804-100x100.jpg 100w, /images/ipcam-qf004-8-20160517042804-150x150.jpg 150w, images/ipcam-qf004-8-20160517042804.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" full_src="images/ipcam-qf004-8-20160517042804.jpg" full_src_w="800" full_src_h="800" gallery_thumbnail_src="images/ipcam-qf004-8-20160517042804-100x100.jpg" gallery_thumbnail_src_w="100" gallery_thumbnail_src_h="100" thumb_src="images/ipcam-qf004-8-20160517042804-300x300.jpg" thumb_src_w="300" thumb_src_h="300" src_w="600" src_h="600" /></a></div>
+                                                <div class="item"><a href="images/ipcam-qf004-18-20160517042804.jpg" class="zoom single-product-lightbox" title="" rel="single-gallery" data-rel="prettyPhoto[product-gallery]"><img width="600" height="600" src="images/ipcam-qf004-18-20160517042804-600x600.jpg" class="attachment-shop_single size-shop_single" alt="" title="ipcam-qf004-18-20160517042804" caption="" url="images/ipcam-qf004-18-20160517042804.jpg" srcset="images/ipcam-qf004-18-20160517042804-600x600.jpg 600w, images/ipcam-qf004-18-20160517042804-300x300.jpg 300w, images/ipcam-qf004-18-20160517042804-100x100.jpg 100w, /images/ipcam-qf004-18-20160517042804-150x150.jpg 150w, images/ipcam-qf004-18-20160517042804.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" full_src="images/ipcam-qf004-18-20160517042804.jpg" full_src_w="800" full_src_h="800" gallery_thumbnail_src="images/ipcam-qf004-18-20160517042804-100x100.jpg" gallery_thumbnail_src_w="100" gallery_thumbnail_src_h="100" thumb_src="images/ipcam-qf004-18-20160517042804-300x300.jpg" thumb_src_w="300" thumb_src_h="300" src_w="600" src_h="600" /></a></div>
+                                                <div class="item"><a href="images/ipcam-qf004-14-20160517042804.jpg" class="zoom single-product-lightbox" title="" rel="single-gallery" data-rel="prettyPhoto[product-gallery]"><img width="600" height="600" src="images/ipcam-qf004-14-20160517042804-600x600.jpg" class="attachment-shop_single size-shop_single" alt="" title="ipcam-qf004-14-20160517042804" caption="" url="images/ipcam-qf004-14-20160517042804.jpg" srcset="images/ipcam-qf004-14-20160517042804-600x600.jpg 600w, images/ipcam-qf004-14-20160517042804-300x300.jpg 300w, images/ipcam-qf004-14-20160517042804-100x100.jpg 100w, /images/ipcam-qf004-14-20160517042804-150x150.jpg 150w, images/ipcam-qf004-14-20160517042804.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" full_src="images/ipcam-qf004-14-20160517042804.jpg" full_src_w="800" full_src_h="800" gallery_thumbnail_src="images/ipcam-qf004-14-20160517042804-100x100.jpg" gallery_thumbnail_src_w="100" gallery_thumbnail_src_h="100" thumb_src="images/ipcam-qf004-14-20160517042804-300x300.jpg" thumb_src_w="300" thumb_src_h="300" src_w="600" src_h="600" /></a></div>
+                                                <div class="item"><a href="images/ipcam-qf004-10-20160517042804.jpg" class="zoom single-product-lightbox" title="" rel="single-gallery" data-rel="prettyPhoto[product-gallery]"><img width="600" height="600" src="images/ipcam-qf004-10-20160517042804-600x600.jpg" class="attachment-shop_single size-shop_single" alt="" title="ipcam-qf004-10-20160517042804" caption="" url="images/ipcam-qf004-10-20160517042804.jpg" srcset="images/ipcam-qf004-10-20160517042804-600x600.jpg 600w, images/ipcam-qf004-10-20160517042804-300x300.jpg 300w, images/ipcam-qf004-10-20160517042804-100x100.jpg 100w, images/ipcam-qf004-10-20160517042804-150x150.jpg 150w, /images/ipcam-qf004-10-20160517042804-180x180.jpg 180w, images/ipcam-qf004-10-20160517042804.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" full_src="images/ipcam-qf004-10-20160517042804.jpg" full_src_w="800" full_src_h="800" gallery_thumbnail_src="images/ipcam-qf004-10-20160517042804-100x100.jpg" gallery_thumbnail_src_w="100" gallery_thumbnail_src_h="100" thumb_src="images/ipcam-qf004-10-20160517042804-300x300.jpg" thumb_src_w="300" thumb_src_h="300" src_w="600" src_h="600" /></a></div>
+                                            </div>
+                                            <div id="product_thumbnails" class="owl-carousel">
+                                                <div class="item" data-id="1">
+                                                    <img width="100" height="100" src="images/ipcam-qf004-4-20160517042804-100x100.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="" title="ipcam-qf004-4-20160517042804" srcset="images/ipcam-qf004-4-20160517042804-100x100.jpg 100w, images/ipcam-qf004-4-20160517042804-300x300.jpg 300w, images/ipcam-qf004-4-20160517042804-600x600.jpg 600w, /images/ipcam-qf004-4-20160517042804-150x150.jpg 150w, /images/ipcam-qf004-4-20160517042804-180x180.jpg 180w, images/ipcam-qf004-4-20160517042804.jpg 800w" sizes="(max-width: 100px) 100vw, 100px" /> </div>
+                                                <div class="item" data-id="2"><img width="100" height="100" src="images/ipcam-qf004-4-20160517042804-600x600.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="" title="ipcam-qf004-4-20160517042804" caption="" url="images/ipcam-qf004-4-20160517042804.jpg" srcset="images/ipcam-qf004-4-20160517042804-600x600.jpg 600w, images/ipcam-qf004-4-20160517042804-300x300.jpg 300w, images/ipcam-qf004-4-20160517042804-100x100.jpg 100w, /images/ipcam-qf004-4-20160517042804-150x150.jpg 150w, /images/ipcam-qf004-4-20160517042804-180x180.jpg 180w, images/ipcam-qf004-4-20160517042804.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" full_src="images/ipcam-qf004-4-20160517042804.jpg" full_src_w="800" full_src_h="800" gallery_thumbnail_src="images/ipcam-qf004-4-20160517042804-100x100.jpg" gallery_thumbnail_src_w="100" gallery_thumbnail_src_h="100" thumb_src="images/ipcam-qf004-4-20160517042804-300x300.jpg" thumb_src_w="300" thumb_src_h="300" src_w="600" src_h="600" /></div>
+                                                <div class="item" data-id="3"><img width="100" height="100" src="images/ipcam-qf004-8-20160517042804-600x600.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="" title="ipcam-qf004-8-20160517042804" caption="" url="images/ipcam-qf004-8-20160517042804.jpg" srcset="images/ipcam-qf004-8-20160517042804-600x600.jpg 600w, images/ipcam-qf004-8-20160517042804-300x300.jpg 300w, images/ipcam-qf004-8-20160517042804-100x100.jpg 100w, /images/ipcam-qf004-8-20160517042804-150x150.jpg 150w, images/ipcam-qf004-8-20160517042804.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" full_src="images/ipcam-qf004-8-20160517042804.jpg" full_src_w="800" full_src_h="800" gallery_thumbnail_src="images/ipcam-qf004-8-20160517042804-100x100.jpg" gallery_thumbnail_src_w="100" gallery_thumbnail_src_h="100" thumb_src="images/ipcam-qf004-8-20160517042804-300x300.jpg" thumb_src_w="300" thumb_src_h="300" src_w="600" src_h="600" /></div>
+                                                <div class="item" data-id="4"><img width="100" height="100" src="images/ipcam-qf004-18-20160517042804-600x600.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="" title="ipcam-qf004-18-20160517042804" caption="" url="images/ipcam-qf004-18-20160517042804.jpg" srcset="images/ipcam-qf004-18-20160517042804-600x600.jpg 600w, images/ipcam-qf004-18-20160517042804-300x300.jpg 300w, images/ipcam-qf004-18-20160517042804-100x100.jpg 100w, /images/ipcam-qf004-18-20160517042804-150x150.jpg 150w, images/ipcam-qf004-18-20160517042804.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" full_src="images/ipcam-qf004-18-20160517042804.jpg" full_src_w="800" full_src_h="800" gallery_thumbnail_src="images/ipcam-qf004-18-20160517042804-100x100.jpg" gallery_thumbnail_src_w="100" gallery_thumbnail_src_h="100" thumb_src="images/ipcam-qf004-18-20160517042804-300x300.jpg" thumb_src_w="300" thumb_src_h="300" src_w="600" src_h="600" /></div>
+                                                <div class="item" data-id="5"><img width="100" height="100" src="images/ipcam-qf004-14-20160517042804-600x600.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="" title="ipcam-qf004-14-20160517042804" caption="" url="images/ipcam-qf004-14-20160517042804.jpg" srcset="images/ipcam-qf004-14-20160517042804-600x600.jpg 600w, images/ipcam-qf004-14-20160517042804-300x300.jpg 300w, images/ipcam-qf004-14-20160517042804-100x100.jpg 100w, /images/ipcam-qf004-14-20160517042804-150x150.jpg 150w, images/ipcam-qf004-14-20160517042804.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" full_src="images/ipcam-qf004-14-20160517042804.jpg" full_src_w="800" full_src_h="800" gallery_thumbnail_src="images/ipcam-qf004-14-20160517042804-100x100.jpg" gallery_thumbnail_src_w="100" gallery_thumbnail_src_h="100" thumb_src="images/ipcam-qf004-14-20160517042804-300x300.jpg" thumb_src_w="300" thumb_src_h="300" src_w="600" src_h="600" /></div>
+                                                <div class="item" data-id="6"><img width="100" height="100" src="images/ipcam-qf004-10-20160517042804-600x600.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="" title="ipcam-qf004-10-20160517042804" caption="" url="images/ipcam-qf004-10-20160517042804.jpg" srcset="images/ipcam-qf004-10-20160517042804-600x600.jpg 600w, images/ipcam-qf004-10-20160517042804-300x300.jpg 300w, images/ipcam-qf004-10-20160517042804-100x100.jpg 100w, images/ipcam-qf004-10-20160517042804-150x150.jpg 150w, /images/ipcam-qf004-10-20160517042804-180x180.jpg 180w, images/ipcam-qf004-10-20160517042804.jpg 800w" sizes="(max-width: 600px) 100vw, 600px" full_src="images/ipcam-qf004-10-20160517042804.jpg" full_src_w="800" full_src_h="800" gallery_thumbnail_src="images/ipcam-qf004-10-20160517042804-100x100.jpg" gallery_thumbnail_src_w="100" gallery_thumbnail_src_h="100" thumb_src="images/ipcam-qf004-10-20160517042804-300x300.jpg" thumb_src_w="300" thumb_src_h="300" src_w="600" src_h="600" /></div>
+                                            </div>
+                                            <div class="thiet-bi">
+                                                <p><img class="alignnone size-full wp-image-66" src="images/home_07.png" alt="" width="100%" srcset="images/home_07.png 912w, /images/home_07-600x49.png 600w" sizes="(max-width: 912px) 100vw, 912px" /></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="summary entry-summary">
+                                        <h1 class="product_title entry-title">IP CAMERA BÁO ĐỘNG CHỐNG TRỘM QF004 HD WIFI</h1>
+                                        <p class="price"><del><span class="woocommerce-Price-amount amount">1.590.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></del> <ins><span class="woocommerce-Price-amount amount">1.300.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></ins></p>
+                                        <div itemprop="description" class="tinymce">
+                                            <ul>
+                                                <li>Quay quét 355 độ, đàm thoại 2 chiều</li>
+                                                <li>Chất lượng HD</li>
+                                                <li>Báo động chống trộm</li>
+                                                <li>Kết nối không dây Wifi</li>
+                                            </ul>
+                                            <p>&#8211; Tặng thẻ 16Gb class 10.<br />
+                                                &#8211; Bảo hành 12 tháng chính hãng.</p>
+                                        </div>
+                                        <form class="cart" method="post" enctype='multipart/form-data'>
+                                            <div class="quantity">
+                                                <label class="screen-reader-text" for="quantity_5c27315a7cba5">Số lượng</label>
+                                                <input type="number" id="quantity_5c27315a7cba5" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="" />
+                                            </div>
+                                            <input type="hidden" name="add-to-cart" value="90" />
+                                            <button type="submit" class="single_add_to_cart_button button alt" id="single_addtocart">Thêm vào giỏ</button>
+                                            <a title="Hướng dẫn mua hàng" href="/huong-dan-mua-hang/" class="button huong-dan-mua-hang"><i class="fa fa-reply" aria-hidden="true"></i> Hướng dẫn mua hàng</a>
+                                        </form>
+                                        <a href="javascript:void(0);" class="devvn_buy_now devvn_buy_now_style" data-id="90">
+                                            <strong>Mua ngay</strong>
+                                            <span>Gọi điện xác nhận và giao hàng tận nơi</span>
+                                        </a>
+                                        <div class="product_meta">
+                                            <span class="sku_wrapper">Mã: <span class="sku">QF004 HD WIFI</span></span>
+                                            <span class="posted_in">Danh mục: <a href="/danh-muc/android-tv-box/" rel="tag">Android TV Box</a>, <a href="/danh-muc/camera-thong-minh/" rel="tag">Camera Thông Minh</a>, <a href="/danh-muc/kinh-thuc-te-ao/" rel="tag">Kính Thực Tế Ảo</a>, <a href="/danh-muc/android-tv-box/android-box-kiwibox/" rel="tag">KIWIBOX</a>, <a href="/danh-muc/loa-am-thanh/" rel="tag">Loa - Âm Thanh</a>, <a href="/danh-muc/may-chieu-phu-kien/" rel="tag">Máy chiếu &amp; Phụ kiện</a>, <a href="/danh-muc/may-chieu-android/" rel="tag">Máy Chiếu ANDROID</a>, <a href="/danh-muc/android-tv-box/android-box-minix/" rel="tag">Minix</a>, <a href="/danh-muc/phu-kien-android-box/" rel="tag">Phụ Kiện Android Box</a>, <a href="/danh-muc/phu-kien-ket-noi-chuyen-doi/" rel="tag">Phụ kiện kết nối &amp; Chuyển đổi</a>, <a href="/danh-muc/pin-sac-du-phong/" rel="tag">Pin Sạc Dự Phòng</a>, <a href="/danh-muc/san-pham-thong-minh/" rel="tag">Sản Phẩm Thông Minh</a>, <a href="/danh-muc/san-pham-xiaomi/" rel="tag">Sản Phẩm XIAOMI</a>, <a href="/danh-muc/smart-watch/" rel="tag">Smart Watch</a>, <a href="/danh-muc/thiet-bi-truyen-hinh-tv/" rel="tag">Thiết Bị Truyền Hình &amp; TV</a></span>
+                                        </div>
+                                        <div class="contact-detail">
+                                            <ul>
+                                                <li><span class="fa fa-phone"></span><strong>012.5222.5111</strong></li>
+                                                <li><span class="fa fa-phone"></span><strong>0888.090.898</strong></li>
+                                                <li><span class="fa fa-envelope"></span>tech360.com.vn@gmail.com</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="social_list">
+                                            <li class="facebook_like">
+                                                <div class="fb-like" data-href="/san-pham/ip-camera-bao-dong-chong-trom-qf004-hd-wifi/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+                                            </li>
+                                            <li class="google_shared">
+                                                <div class="g-plusone" data-size="medium"></div>
+                                            </li>
+                                        </ul>
+                                    </div><!-- .summary -->
+                                    <div class="row row-padding-0">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 product-infor-left">
+                                            <div class="woocommerce-tabs wc-tabs-wrapper">
+                                                <ul class="tabs wc-tabs">
+                                                    <li class="description_tab">
+                                                        <a href="#tab-description">Mô tả</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description">
+                                                    <div class="section_cvp_title margin-b-15">
+                                                        <h2>Mô tả sản phẩm</h2>
+                                                    </div>
+                                                    <div class="tinymce">
+                                                        <p><strong>IP Camera báo động chống trộm QF004 HD WiFi  &#8211; Tặng thẻ 16Gb class 10</strong></p>
+                                                        <p>QF004 là chiếc camera an ninh thông minh với tính năng hỗ trợ người dùng theo dõi trực tiếp theo thời gian thực mọi diễn biến mà chiếc camera này quay lại được qua các thiết bị di động có kết nối được với sóng wifi, nó cũng bao gồm khả năng báo động cùng nhiều tính năng vô cùng hữu ích khác sẽ giúp bạn bảo vệ an toàn cho ngôi nhà hay theo dõi được sát sao các hoạt động tại nơi bạn cần phải theo dõi.</p>
+                                                        <p>Để sử dụng được chiếc ip camera QF004 thật sự rất đơn giản, bạn chỉ cần lắp thẻ nhớ vào cho nó, cắm nguồn cho camera và có thể kết nối với internet qua cổng mạng LAN hoặc qua anten WiFi để sử dụng được đầy đủ các tính năng giám sát của chiếc camera QF004 này.</p>
+                                                        <p>Camera giám sát chống trộm QF004 cho phép người dùng điều khiển, cài đặt và theo dõi từ xa qua smartphone, table, laptop thông qua kết nối mạng internet. TECH360 sẽ hỗ trợ cài đặt miễn phí ứng dụng điều khiển này cho quý khách, đồng thời sẽ hướng dẫn bạn cách sử dụng. Sau khi cài đặt xong, bạn khởi động ứng dụng, chọn thêm thiết bị (Chọn hỗ trợ QR code). Sau khi thêm các camera, bạn có thể thiết lập lại các thông số theo ý mình. Chỉ vài thao tác cài đặt đơn giản, bạn đã có thể xem hình ảnh trực tiếp từ các camera qua thiết bị di động của mình.</p>
+                                                        <p>Cảm ứng nhận diện của camera an ninh QF004 HD WiFi có khoảng quét rộng tới 10 mét, đặc biệt chế độ báo động gửi về email, khi có đối tượng chuyển động qua camera, nó sẽ ngay lập tức chụp hình và gửi vào hòm mail cho bạn.</p>
+                                                        <p>Camera chống trộm QF004 HD WiFi hỗ trợ thẻ nhớ lên đến 32G, thời gian lưu trữ khoảng 10 ngày, tự động ghi đè khi thẻ đầy. Ngoài ra tính năng Motion Detection Recoding chỉ ghi hình khi có đối tượng chuyển động đi qua giúp tiết kiệm dung lượng lưu trữ trên thẻ nhớ. Tất nhiên khi sử dụng tính năng này, bạn vẫn có thể theo dõi hoạt động của camera như bình thường.</p>
+                                                        <p>Tuyệt vời  hơn nữa, camera giám sát an ninh QF004 trang bị cho người dùng cả loa và micro tích hợp sẵn trên thiết bị, hỗ trợ ghi hình có tiếng và nhất là có thể đàm thoại 2 chiều với người nhà qua camera như một chiếc điện thoại để bàn. Thật sự lý tưởng để bạn theo dõi trẻ nhỏ, chăm sóc người già, giám sát an ninh cho ngôi nhà, theo dõi thú cưng,&#8230;</p>
+                                                        <p>IP Camera QF004 được trang bị chipset của Hisilicon, ống kính cảm ứng 3.6mm cho phép ghi hình mượt mà, ổn định, nhanh chóng, cũng như cho chất lượng hình ảnh luôn đảm bảo rõ nét. Camera an ninh QF004 hỗ trợ ghi hình video độ phân giải HD 720p (1280&#215;720). Với nhiều tính năng nổi bật nên IP Camera QF004 được ứng dụng trong nhiều mục đích sử dụng khác nhau của cuộc sống, đảm bảo an ninh, an toàn cho con người và của cải vật chất.</p>
+                                                        <p><strong>Sản phẩm hiện được phân phối bởi TECH360 &#8211; 58 Thái Hà, Đống Đa, Hà Nội. HOTLINE 0938.94.1111. Quý khách vui lòng đến trực tiếp showroom, gọi điện đến số HOTLINE hoặc trò chuyện trực tiếp với nhân viên tư vấn tại cửa sổ CHAT góc phải website để biết thêm thông tin chi tiết. </strong></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-padding-0">
+                                       <div class="col-sm-12 col-xs-12 product-review-left">
+                                            <div class="cart_after_content">
+                                                <div class="cart_after_content_title">
+                                                    <h2>Mua sản phẩm này</h2>
+                                                </div>
+                                                <div class="row row-padding-15">
+                                                    <div class="col-xs-12">
+                                                        <h3>IP CAMERA BÁO ĐỘNG CHỐNG TRỘM QF004 HD WIFI</h3>
+                                                        <form class="cart" method="post" enctype='multipart/form-data'>
+                                                            <div class="quantity">
+                                                                <label class="screen-reader-text" for="quantity_5c27315a7eac9">Số lượng</label>
+                                                                <input type="number" id="quantity_5c27315a7eac9" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="" />
+                                                            </div>
+                                                            <input type="hidden" name="add-to-cart" value="90" />
+                                                            <button type="submit" class="single_add_to_cart_button button alt" id="single_addtocart">Thêm vào giỏ</button>
+                                                            <a title="Hướng dẫn mua hàng" href="/huong-dan-mua-hang/" class="button huong-dan-mua-hang"><i class="fa fa-reply" aria-hidden="true"></i> Hướng dẫn mua hàng</a>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <section class="related products">
+                                        <h2>Sản phẩm tương tự</h2>
+                                        <ul class="products columns-4">
+                                            <li class="post-84 product type-product status-publish has-post-thumbnail product_cat-android-tv-box product_cat-camera-thong-minh product_cat-kinh-thuc-te-ao product_cat-android-box-kiwibox product_cat-loa-am-thanh product_cat-may-chieu-phu-kien product_cat-may-chieu-android product_cat-android-box-minix product_cat-phu-kien-android-box product_cat-phu-kien-ket-noi-chuyen-doi product_cat-pin-sac-du-phong product_cat-san-pham-thong-minh product_cat-san-pham-xiaomi product_cat-smart-watch product_cat-thiet-bi-truyen-hinh-tv product_tag-android-tv-box product_tag-kiwibox first instock sale shipping-taxable purchasable product-type-variable has-default-attributes">
+                                                <div class="shop_loop_box">
+                                                    <a href="/san-pham/android-tv-box-kiwibox-s1/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                        <span class="onsale">Giảm giá!</span>
+                                                        <img width="300" height="300" src="images/tv-box-kiwi-s1-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" /></a><a rel="nofollow" href="/san-pham/android-tv-box-kiwibox-s1/" data-quantity="1" data-product_id="84" data-product_sku="KIWIS1" class="button product_type_variable add_to_cart_button" id="tech_addtocart_84">Lựa chọn các tùy chọn</a> </div>
+                                                <a href="/san-pham/android-tv-box-kiwibox-s1/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                    <h2 class="woocommerce-loop-product__title">Android TV Box KiwiBox S1</h2>
+                                                </a>
+                                                <span class="price"><span class="woocommerce-Price-amount amount">1.200.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span> &ndash; <span class="woocommerce-Price-amount amount">1.700.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></span>
+                                            </li>
+                                            <li class="post-98 product type-product status-publish has-post-thumbnail product_cat-android-tv-box product_cat-camera-thong-minh product_cat-kinh-thuc-te-ao product_cat-loa-am-thanh product_cat-may-chieu-phu-kien product_cat-may-chieu-android product_cat-phu-kien-android-box product_cat-phu-kien-ket-noi-chuyen-doi product_cat-pin-sac-du-phong product_cat-san-pham-thong-minh product_cat-san-pham-xiaomi product_cat-smart-watch product_cat-thiet-bi-truyen-hinh-tv product_tag-may-chieu  instock sale featured shipping-taxable purchasable product-type-simple">
+                                                <div class="shop_loop_box">
+                                                    <a href="/san-pham/may-chieu-tyco-t35/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                        <span class="onsale">Giảm giá!</span>
+                                                        <img width="300" height="300" src="images/img_6777000-20160621201405-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" /></a><a rel="nofollow" href="/san-pham/ip-camera-bao-dong-chong-trom-qf004-hd-wifi/?add-to-cart=98" data-quantity="1" data-product_id="98" data-product_sku="TYCOT35" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_98">Thêm vào giỏ</a> </div>
+                                                <a href="/san-pham/may-chieu-tyco-t35/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                    <h2 class="woocommerce-loop-product__title">Máy chiếu Tyco T35</h2>
+                                                </a>
+                                                <span class="price"><del><span class="woocommerce-Price-amount amount">6.490.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></del> <ins><span class="woocommerce-Price-amount amount">5.900.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></ins></span>
+                                                <div class="devvn_is_featured"><img width="80" height="44" src="images/70_58013_1a.png" class="attachment-full size-full" alt="" /></div>
+                                            </li>
+                                            <li class="post-87 product type-product status-publish has-post-thumbnail product_cat-android-tv-box product_cat-camera-thong-minh product_cat-kinh-thuc-te-ao product_cat-android-box-kiwibox product_cat-loa-am-thanh product_cat-may-chieu-phu-kien product_cat-may-chieu-android product_cat-android-box-minix product_cat-phu-kien-android-box product_cat-phu-kien-ket-noi-chuyen-doi product_cat-pin-sac-du-phong product_cat-san-pham-thong-minh product_cat-san-pham-xiaomi product_cat-smart-watch product_cat-thiet-bi-truyen-hinh-tv product_tag-camera-the-thao  instock sale shipping-taxable purchasable product-type-simple">
+                                                <div class="shop_loop_box">
+                                                    <a href="/san-pham/camera-the-thao-sjcam-sj7-star-4k-wifi/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                        <span class="onsale">Giảm giá!</span>
+                                                        <img width="300" height="300" src="images/sjcam-sj7-star-2-20160929004127-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" /></a><a rel="nofollow" href="/san-pham/ip-camera-bao-dong-chong-trom-qf004-hd-wifi/?add-to-cart=87" data-quantity="1" data-product_id="87" data-product_sku="SJ7STAR" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_87">Thêm vào giỏ</a> </div>
+                                                <a href="/san-pham/camera-the-thao-sjcam-sj7-star-4k-wifi/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                    <h2 class="woocommerce-loop-product__title">Camera thể thao SJCAM SJ7 Star 4K Wifi</h2>
+                                                </a>
+                                                <span class="price"><del><span class="woocommerce-Price-amount amount">4.690.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></del> <ins><span class="woocommerce-Price-amount amount">4.590.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></ins></span>
+                                            </li>
+                                            <li class="post-207 product type-product status-publish has-post-thumbnail product_cat-android-tv-box product_cat-camera-thong-minh product_cat-kinh-thuc-te-ao product_cat-android-box-kiwibox product_cat-loa-am-thanh product_cat-may-chieu-phu-kien product_cat-may-chieu-android product_cat-android-box-minix product_cat-phu-kien-android-box product_cat-phu-kien-ket-noi-chuyen-doi product_cat-pin-sac-du-phong product_cat-san-pham-thong-minh product_cat-san-pham-xiaomi product_cat-smart-watch product_cat-thiet-bi-truyen-hinh-tv last instock sale shipping-taxable purchasable product-type-simple">
+                                                <div class="shop_loop_box">
+                                                    <a href="/san-pham/canera-thao-action-cam-sjcam-sj4000/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                        <span class="onsale">Giảm giá!</span>
+                                                        <img width="300" height="300" src="images/camera-the-thao-sj4000-5-20160423015739-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="" /></a><a rel="nofollow" href="/san-pham/ip-camera-bao-dong-chong-trom-qf004-hd-wifi/?add-to-cart=207" data-quantity="1" data-product_id="207" data-product_sku="SJCAM SJ4000" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_207">Thêm vào giỏ</a> </div>
+                                                <a href="/san-pham/canera-thao-action-cam-sjcam-sj4000/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                                    <h2 class="woocommerce-loop-product__title">Canera thể thao ACTION CAM SJCAM SJ4000</h2>
+                                                </a>
+                                                <span class="price"><del><span class="woocommerce-Price-amount amount">1.490.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></del> <ins><span class="woocommerce-Price-amount amount">1.000.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></ins></span>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <div class="row row-padding-0">
+                                        <div class="col-sm-6 col-xs-12 product-review-left">
+                                            <div class="section_cvp_title margin-b-15">
+                                                <h2>Đánh giá sản phẩm</h2>
+                                            </div>
+                                            <div id="reviews" class="woocommerce-Reviews">
+                                                <div id="comments">
+                                                    <h2 class="woocommerce-Reviews-title">Đánh giá</h2>
+                                                    <p class="woocommerce-noreviews">Chưa có đánh giá nào.</p>
+                                                </div>
+                                                <div id="review_form_wrapper">
+                                                    <div id="review_form">
+                                                        <div id="respond" class="comment-respond">
+                                                            <span id="reply-title" class="comment-reply-title">Hãy là người đầu tiên nhận xét &ldquo;IP CAMERA BÁO ĐỘNG CHỐNG TRỘM QF004 HD WIFI&rdquo; <small><a rel="nofollow" id="cancel-comment-reply-link" href="/san-pham/ip-camera-bao-dong-chong-trom-qf004-hd-wifi/#respond" style="display:none;">Hủy</a></small></span>
+                                                            <form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+                                                                <p class="comment-notes"><span id="email-notes">Email của bạn sẽ không được hiển thị công khai.</span> Các trường bắt buộc được đánh dấu <span class="required">*</span></p>
+                                                                <div class="comment-form-rating"><label for="rating">Đánh giá của bạn</label><select name="rating" id="rating" aria-required="true" required>
+                                                                        <option value="">Xếp hạng&hellip;</option>
+                                                                        <option value="5">Rất tốt</option>
+                                                                        <option value="4">Tốt</option>
+                                                                        <option value="3">Trung bình</option>
+                                                                        <option value="2">Không tệ</option>
+                                                                        <option value="1">Rất tệ</option>
+                                                                    </select></div>
+                                                                <p class="comment-form-comment"><label for="comment">Nhận xét của bạn&nbsp;<span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required></textarea></p>
+                                                                <p class="comment-form-author"><label for="author">Tên&nbsp;<span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required="true" required /></p>
+                                                                <p class="comment-form-email"><label for="email">Email&nbsp;<span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" aria-required="true" required /></p>
+                                                                <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Gửi đi" /> <input type='hidden' name='comment_post_ID' value='90' id='comment_post_ID' />
+                                                                    <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                                                                </p>
+                                                            </form>
+                                                        </div><!-- #respond -->
+                                                    </div>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12 product-review-right">
+                                            <div class="section_cvp_title margin-b-15">
+                                                <h2>Bình luận trên Facebook</h2>
+                                            </div>
+                                            <div class="fb-comments" data-href="/san-pham/ip-camera-bao-dong-chong-trom-qf004-hd-wifi/" data-numposts="10" data-order-by="time" data-width="100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12 col-xs-12 product-right">
+                                    <div class="chinh_sach_cua_shop">
+                                        <ul>
+                                            <li class="has-icon">
+                                                <div class="chinhsach_icon"><img width="42" height="42" src="images/icon-policy-1.png" class="attachment-full size-full" alt="" /></div>
+                                                <div class="chinhsach_content">
+                                                    <p>GIAO HÀNG TRÊN TOÀN QUỐC</p>
+                                                </div>
+                                            </li>
+                                            <li class="has-icon">
+                                                <div class="chinhsach_icon"><img width="42" height="42" src="images/icon-policy-2.png" class="attachment-full size-full" alt="" /></div>
+                                                <div class="chinhsach_content">
+                                                    <p>ĐỔI TRẢ TRONG 15 NGÀY NẾU LỖI KỸ THUẬT</p>
+                                                </div>
+                                            </li>
+                                            <li class="has-icon">
+                                                <div class="chinhsach_icon"><img width="42" height="42" src="images/icon-policy-3.png" class="attachment-full size-full" alt="" /></div>
+                                                <div class="chinhsach_content">
+                                                    <p>THANH TOÁN TẠI NHÀ HOẶC QUA THẺ</p>
+                                                </div>
+                                            </li>
+                                            <li class="has-icon">
+                                                <div class="chinhsach_icon"><img width="42" height="42" src="images/icon-policy-4.png" class="attachment-full size-full" alt="" /></div>
+                                                <div class="chinhsach_content">
+                                                    <p>TỔNG CSKH 8H30 - 18H00<br />
+                                                        <strong>1900 0120</strong></p>
+                                                </div>
+                                            </li>
+                                            <li class="has-icon">
+                                                <div class="chinhsach_icon"><img width="42" height="42" src="images/icon-policy-4.png" class="attachment-full size-full" alt="" /></div>
+                                                <div class="chinhsach_content">
+                                                    <p>KINH DOANH<br />
+                                                        <strong>012.5222.5111</strong><br />
+                                                        <strong>0888.090.898</strong></p>
+                                                </div>
+                                            </li>
+                                            <li class="has-icon">
+                                                <div class="chinhsach_icon"><img width="42" height="42" src="images/icon-policy-4.png" class="attachment-full size-full" alt="" /></div>
+                                                <div class="chinhsach_content">
+                                                    <p>KỸ THUẬT<br />
+                                                        <strong>012.5222.5111</strong></p>
+                                                </div>
+                                            </li>
+                                            <li class="has-icon">
+                                                <div class="chinhsach_icon"><img width="42" height="42" src="images/icon-policy-5.png" class="attachment-full size-full" alt="" /></div>
+                                                <div class="chinhsach_content">
+                                                    <p>LẮP ĐẶT TẠI CÁC THÀNH PHỐ LỚN</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="custom_html-2" class="widget_text widget block-sidebar widget_custom_html">
+                                        <h3 class="title-sidebar">HOSTING KHUYÊN DÙNG</h3>
+                                        <div class="textwidget custom-html-widget">
+                                            <div class="hosting-nen-dung">
+                                                <table class="banggiatenmien">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="price">0.9$ / tháng</td>
+                                                            <td class="provider"><a href="https://chamnhe.com/hosting/hawkhost" target="_blank"><img src="images/hawkhost.png"/>Hawk Host</a></td>
+                                                            <td class="action"><a class="coupon-code" href="https://chamnhe.com/hosting/hawkhost" data-code="bfshared2017">Xem thêm</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="price">2.97$ / tháng</td>
+                                                            <td class="provider"><a href="https://chamnhe.com/hosting-vps/stablehost" target="_blank"><img src="images/stablehost.png" />Stable Host</a></td>
+                                                            <td class="action"><a class="coupon-code" href="https://chamnhe.com/hosting-vps/stablehost" data-code="40OFFMT">Xem thêm</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="price">30k / tháng</td>
+                                                            <td class="provider"><a href="https://chamnhe.com/hosting-vps/vhost" target="_blank"><img src="images/vhost.png" />vHost</a></td>
+                                                            <td class="action"><a class="coupon-code" href="https://chamnhe.com/hosting-vps/vhost" data-code="">Xem thêm</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="price">50k / tháng</td>
+                                                            <td class="provider"><a href="https://chamnhe.com/hosting/azdigi" target="_blank"><img src="images/azdigi.png" />AZDigi (Thạch Phạm)</a></td>
+                                                            <td class="action"><a class="coupon-code" href="https://chamnhe.com/hosting/azdigi" data-code="">Xem thêm</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="recent-posts_svl-3" class="widget block-sidebar widget_recent_entries_svl">
+                                        <h3 class="title-sidebar">Tin tức mới</h3>
+                                        <ul>
+                                            <li class="rcp_svl_has_thumb">
+                                                <a href="/quay-video-360-trai-nghiem-vr-voi-action-camera-sjcam-sj360/" title="Quay video 360 độ, trải nghiệm VR với action camera SJCAM SJ360" class="link_recent_thumb">
+                                                    <img width="150" height="150" src="images/anh-dep-girl-xinh-02-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" /> </a>
+                                                <div class="rcp_svl_content">
+                                                    <a href="/quay-video-360-trai-nghiem-vr-voi-action-camera-sjcam-sj360/" title="Quay video 360 độ, trải nghiệm VR với action camera SJCAM SJ360">
+                                                        Quay video 360 độ, trải nghiệm VR với action camera SJCAM SJ360 </a>
+                                                    <span class="date">12/05/2017</span>
+                                                </div>
+                                            </li>
+                                            <li class="rcp_svl_has_thumb">
+                                                <a href="/kinh-nghiem-su-dung-camera-hanh-dong-cho-phuot-thu/" title="Kinh nghiệm sử dụng camera hành động cho phượt thủ" class="link_recent_thumb">
+                                                    <img width="150" height="150" src="images/anh-dep-meo-con3__76574_zoom-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" /> </a>
+                                                <div class="rcp_svl_content">
+                                                    <a href="/kinh-nghiem-su-dung-camera-hanh-dong-cho-phuot-thu/" title="Kinh nghiệm sử dụng camera hành động cho phượt thủ">
+                                                        Kinh nghiệm sử dụng camera hành động cho phượt thủ </a>
+                                                    <span class="date">12/05/2017</span>
+                                                </div>
+                                            </li>
+                                            <li class="rcp_svl_has_thumb">
+                                                <a href="/sau-camera-thao-sj6-legend-cua-sjcam-thi-truong-sap-don-nhan-san-pham-cao-cap-moi-mang-ten-sj7-star/" title="Sau camera thể thao SJ6 Legend của SJCAM thị trường sắp đón nhận sản phẩm cao cấp mới mang tên SJ7 Star" class="link_recent_thumb">
+                                                    <img width="150" height="150" src="images/maxresdefault-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" /> </a>
+                                                <div class="rcp_svl_content">
+                                                    <a href="/sau-camera-thao-sj6-legend-cua-sjcam-thi-truong-sap-don-nhan-san-pham-cao-cap-moi-mang-ten-sj7-star/" title="Sau camera thể thao SJ6 Legend của SJCAM thị trường sắp đón nhận sản phẩm cao cấp mới mang tên SJ7 Star">
+                                                        Sau camera thể thao SJ6 Legend của SJCAM thị trường sắp đón nhận sản phẩm cao cấp mới mang tên SJ7 Star </a>
+                                                    <span class="date">13/11/2016</span>
+                                                </div>
+                                            </li>
+                                            <li class="rcp_svl_has_thumb">
+                                                <a href="/co-gi-moi-tren-hai-phien-ban-sjcam-sj6-legend-va-sj7-star/" title="Có gì mới trên hai phiên bản SJCAM SJ6 Legend và SJ7 Star" class="link_recent_thumb">
+                                                    <img width="150" height="150" src="images/ipcam-qf004-10-20160517042804-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" /> </a>
+                                                <div class="rcp_svl_content">
+                                                    <a href="/co-gi-moi-tren-hai-phien-ban-sjcam-sj6-legend-va-sj7-star/" title="Có gì mới trên hai phiên bản SJCAM SJ6 Legend và SJ7 Star">
+                                                        Có gì mới trên hai phiên bản SJCAM SJ6 Legend và SJ7 Star </a>
+                                                    <span class="date">12/11/2016</span>
+                                                </div>
+                                            </li>
+                                            <li class="rcp_svl_has_thumb">
+                                                <a href="/video-review-camera-the-thao-sjcam-sj6-legend-cung-mot-so-hinh-anh-ve-no/" title="Video review camera thể thao SJCAM SJ6 Legend cùng một số hình ảnh về nó" class="link_recent_thumb">
+                                                    <img width="150" height="150" src="images/kiwibox-s3-49-1-150x150.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" /> </a>
+                                                <div class="rcp_svl_content">
+                                                    <a href="/video-review-camera-the-thao-sjcam-sj6-legend-cung-mot-so-hinh-anh-ve-no/" title="Video review camera thể thao SJCAM SJ6 Legend cùng một số hình ảnh về nó">
+                                                        Video review camera thể thao SJCAM SJ6 Legend cùng một số hình ảnh về nó </a>
+                                                    <span class="date">12/11/2016</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="recent-videos-svl-3" class="widget block-sidebar widget_recent_entries_svl">
+                                        <h3 class="title-sidebar">Video mới</h3>
+                                        <ul class="recent-video-ul">
+                                            <li class="rcp_svl_has_thumb">
+                                                <a href="/videos/android-tivi-box-thiet-bi-giai-tri-da-nang-trong-gia-dinh-ban/" title="Android Tivi Box thiết bị giải trí đa năng trong gia đình bạn" class="link_recent_thumb">
+                                                    <img width="150" height="150" src="images/video2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" /> </a>
+                                                <div class="rcp_svl_content">
+                                                    <a href="/videos/android-tivi-box-thiet-bi-giai-tri-da-nang-trong-gia-dinh-ban/" title="Android Tivi Box thiết bị giải trí đa năng trong gia đình bạn">
+                                                        Android Tivi Box thiết bị giải trí đa năng trong gia đình bạn </a>
+                                                </div>
+                                            </li>
+                                            <li class="rcp_svl_has_thumb">
+                                                <a href="/videos/android-tivi-box-minix-neo-u1-unbox/" title="Android Tivi Box Minix NEO U1 &#8211; Unbox" class="link_recent_thumb">
+                                                    <img width="150" height="150" src="images/maxresdefault-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" /> </a>
+                                                <div class="rcp_svl_content">
+                                                    <a href="/videos/android-tivi-box-minix-neo-u1-unbox/" title="Android Tivi Box Minix NEO U1 &#8211; Unbox">
+                                                        Android Tivi Box Minix NEO U1 &#8211; Unbox </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- #product-90 -->
+                        <div class="devvn-popup-quickbuy" data-popup="popup-quickbuy" id="popup_content_90">
+                            <div class="devvn-popup-inner">
+                                <div class="devvn-popup-title">
+                                    <span>Đặt mua IP CAMERA BÁO ĐỘNG CHỐNG TRỘM QF004 HD WIFI</span>
+                                    <button type="button" class="devvn-popup-close"></button>
+                                </div>
+                                <div class="devvn-popup-content devvn-popup-content_90 ">
+                                    <div class="devvn-popup-content-left ">
+                                        <div class="devvn-popup-prod">
+                                            <div class="devvn-popup-img"><img src="images/ipcam-qf004-4-20160517042804-100x100.jpg" alt="" /></div>
+                                            <div class="devvn-popup-info">
+                                                <span class="devvn_title">IP CAMERA BÁO ĐỘNG CHỐNG TRỘM QF004 HD WIFI</span>
+                                                <span class="devvn_price"><del><span class="woocommerce-Price-amount amount">1.590.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></del> <ins><span class="woocommerce-Price-amount amount">1.300.000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></ins></span> </div>
+                                        </div>
+                                        <div class="devvn_prod_variable" data-simpleprice="1300000">
+                                            <form class="cart" method="post" enctype='multipart/form-data'>
+                                                <div class="quantity">
+                                                    <label class="screen-reader-text" for="quantity_5c27315a9318b">Số lượng</label>
+                                                    <input type="number" id="quantity_5c27315a9318b" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="" />
+                                                </div>
+                                                <input type="hidden" name="add-to-cart" value="90" />
+                                                <button type="submit" class="single_add_to_cart_button button alt" id="single_addtocart">Thêm vào giỏ</button>
+                                                <a title="Hướng dẫn mua hàng" href="/huong-dan-mua-hang/" class="button huong-dan-mua-hang"><i class="fa fa-reply" aria-hidden="true"></i> Hướng dẫn mua hàng</a>
+                                            </form>
+                                        </div>
+                                        Bạn vui lòng nhập đúng số điện thoại để chúng tôi sẽ gọi xác nhận đơn hàng trước khi giao hàng. Xin cảm ơn!
+                                    </div>
+                                    <div class="devvn-popup-content-right">
+                                        <form class="devvn_cusstom_info" id="devvn_cusstom_info" method="post">
+                                            <div class="popup-customer-info">
+                                                <div class="popup-customer-info-title">Thông tin người mua</div>
+                                                <div class="popup-customer-info-group popup-customer-info-radio">
+                                                    <label>
+                                                        <input type="radio" name="customer-gender" value="1" checked />
+                                                        <span>Anh</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="customer-gender" value="2" />
+                                                        <span>Chị</span>
+                                                    </label>
+                                                </div>
+                                                <div class="popup-customer-info-group">
+                                                    <div class="popup-customer-info-item-2">
+                                                        <input type="text" class="customer-name" name="customer-name" placeholder="Họ và tên">
+                                                    </div>
+                                                    <div class="popup-customer-info-item-2">
+                                                        <input type="text" class="customer-phone" name="customer-phone" placeholder="Số điện thoại">
+                                                    </div>
+                                                </div>
+                                                <div class="popup-customer-info-group">
+                                                    <div class="popup-customer-info-item-1">
+                                                        <input type="text" class="customer-email" name="customer-email" data-required="false" placeholder="Địa chỉ email (Không bắt buộc)">
+                                                    </div>
+                                                </div>
+                                                <div class="popup-customer-info-group">
+                                                    <div class="popup-customer-info-item-3-13">
+                                                        <select class="customer-location" name="customer-location" id="devvn_city">
+                                                            <option value="">Tỉnh thành</option>
+                                                            <option value="01">Hà Nội</option>
+                                                            <option value="02">Hà Giang</option>
+                                                            <option value="04">Cao Bằng</option>
+                                                            <option value="06">Bắc Kạn</option>
+                                                            <option value="08">Tuyên Quang</option>
+                                                            <option value="10">Lào Cai</option>
+                                                            <option value="11">Điện Biên</option>
+                                                            <option value="12">Lai Châu</option>
+                                                            <option value="14">Sơn La</option>
+                                                            <option value="15">Yên Bái</option>
+                                                            <option value="17">Hoà Bình</option>
+                                                            <option value="19">Thái Nguyên</option>
+                                                            <option value="20">Lạng Sơn</option>
+                                                            <option value="22">Quảng Ninh</option>
+                                                            <option value="24">Bắc Giang</option>
+                                                            <option value="25">Phú Thọ</option>
+                                                            <option value="26">Vĩnh Phúc</option>
+                                                            <option value="27">Bắc Ninh</option>
+                                                            <option value="30">Hải Dương</option>
+                                                            <option value="31">Hải Phòng</option>
+                                                            <option value="33">Hưng Yên</option>
+                                                            <option value="34">Thái Bình</option>
+                                                            <option value="35">Hà Nam</option>
+                                                            <option value="36">Nam Định</option>
+                                                            <option value="37">Ninh Bình</option>
+                                                            <option value="38">Thanh Hóa</option>
+                                                            <option value="40">Nghệ An</option>
+                                                            <option value="42">Hà Tĩnh</option>
+                                                            <option value="44">Quảng Bình</option>
+                                                            <option value="45">Quảng Trị</option>
+                                                            <option value="46">Thừa Thiên Huế</option>
+                                                            <option value="48">Đà Nẵng</option>
+                                                            <option value="49">Quảng Nam</option>
+                                                            <option value="51">Quảng Ngãi</option>
+                                                            <option value="52">Bình Định</option>
+                                                            <option value="54">Phú Yên</option>
+                                                            <option value="56">Khánh Hòa</option>
+                                                            <option value="58">Ninh Thuận</option>
+                                                            <option value="60">Bình Thuận</option>
+                                                            <option value="62">Kon Tum</option>
+                                                            <option value="64">Gia Lai</option>
+                                                            <option value="66">Đắk Lắk</option>
+                                                            <option value="67">Đắk Nông</option>
+                                                            <option value="68">Lâm Đồng</option>
+                                                            <option value="70">Bình Phước</option>
+                                                            <option value="72">Tây Ninh</option>
+                                                            <option value="74">Bình Dương</option>
+                                                            <option value="75">Đồng Nai</option>
+                                                            <option value="77">Bà Rịa - Vũng Tàu</option>
+                                                            <option value="79" selected='selected'>Hồ Chí Minh</option>
+                                                            <option value="80">Long An</option>
+                                                            <option value="82">Tiền Giang</option>
+                                                            <option value="83">Bến Tre</option>
+                                                            <option value="84">Trà Vinh</option>
+                                                            <option value="86">Vĩnh Long</option>
+                                                            <option value="87">Đồng Tháp</option>
+                                                            <option value="89">An Giang</option>
+                                                            <option value="91">Kiên Giang</option>
+                                                            <option value="92">Cần Thơ</option>
+                                                            <option value="93">Hậu Giang</option>
+                                                            <option value="94">Sóc Trăng</option>
+                                                            <option value="95">Bạc Liêu</option>
+                                                            <option value="96">Cà Mau</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="popup-customer-info-item-3-23">
+                                                        <select class="customer-quan" name="customer-quan" id="devvn_district">
+                                                            <option value="">Quận/huyện</option>
+                                                        </select>
+                                                        <input name="require_district" id="require_district" type="hidden" value="0" />
+                                                    </div>
+                                                    <div class="popup-customer-info-item-3-33">
+                                                        <select class="customer-xa" name="customer-xa" id="devvn_ward">
+                                                            <option value="">Xã/phường</option>
+                                                        </select>
+                                                        <input name="require_village" id="require_village" type="hidden" value="0" />
+                                                    </div>
+                                                </div>
+                                                <div class="popup-customer-info-group">
+                                                    <div class="popup-customer-info-item-1">
+                                                        <input type="text" class="customer-address" name="customer-address" placeholder="Số nhà, tên đường (Không bắt buộc)" />
+                                                    </div>
+                                                </div>
+                                                <div class="popup-customer-info-group">
+                                                    <div class="popup-customer-info-item-1">
+                                                        <textarea class="order-note" name="order-note" placeholder="Ghi chú đơn hàng (Không bắt buộc)"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-customer-info-group">
+                                                    <div class="popup-customer-info-item-1 popup_quickbuy_shipping">
+                                                        <div class="popup_quickbuy_shipping_title">Phí vận chuyển:</div>
+                                                        <div class="popup_quickbuy_shipping_calc"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-customer-info-group">
+                                                    <div class="popup-customer-info-item-1 popup_quickbuy_shipping">
+                                                        <div class="popup_quickbuy_shipping_title">Tổng:</div>
+                                                        <div class="popup_quickbuy_total_calc"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-customer-info-group">
+                                                    <div class="popup-customer-info-item-1">
+                                                        <button type="button" class="devvn-order-btn">Đặt hàng ngay</button>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-customer-info-group">
+                                                    <div class="popup-customer-info-item-1">
+                                                        <div class="devvn_quickbuy_mess"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="prod_id" id="prod_id" value="90">
+                                            <input type="hidden" name="prod_nonce" id="prod_nonce" value="">
+                                            <input type="hidden" name="enable_ship" id="enable_ship" value="1">
+                                            <input name="require_address" id="require_address" type="hidden" value="0" />
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        div#container {
+            width: 100%;
+        }
+        @media (min-width: 768px)
+        {
+            .col-sm-push-3 {
+                left: inherit;
+            }
+        }
+    </style>
+    <!-- End thay đổi -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer_wrap">
+                <div class="footer1 col-md-3 col-sm-3 col-xs-12">
+                    <div id="text-2" class="widget-footer widget_text">
+                        <h3 class="title-sidebar-footer">Thông tin liên hệ</h3>
+                        <div class="textwidget">
+                            <p><b><span style="color: red">TECH360 HÀ NỘI</span></b><br />
+                                Địa chỉ: Số 58 Thái Hà , Đống Đa<br />
+                                Điện thoại: (+84) 243.944.7979<br />
+                                Hotline: 0938.94.1111<br />
+                                <b><span style="color: red">TECH360 HCM</span></b><br />
+                                Địa chỉ: 9/7 Lý Văn Phức, P. Tân Định, Q1<br />
+                                Hotline: 0938.94.1115<br />
+                                <b><span style="color: red">EMAIL TECH360<b></b></span><b><br />
+                                        tech360.com.vn@gmail.com</b></b></p>
+                        </div>
+                    </div>
+                    <div id="text-5" class="widget-footer widget_text">
+                        <h3 class="title-sidebar-footer">Theo dõi SHOP</h3>
+                        <div class="textwidget">
+                            <ul class="list-socials">
+                                <li><a href="#" target="_blank" title=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#" title=""><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer2 col-md-3 col-sm-3 col-xs-12">
+                    <div id="nav_menu-2" class="widget-footer widget_nav_menu">
+                        <h3 class="title-sidebar-footer">Trợ giúp</h3>
+                        <div class="menu-menu-tro-giup-container">
+                            <ul id="menu-menu-tro-giup" class="menu">
+                                <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a href="/gioi-thieu/">Giới thiệu</a></li>
+                                <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="/tin-tuc/">Tin tức</a></li>
+                                <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="/ho-tro-khach-hang/">Hỗ trợ khách hàng</a></li>
+                                <li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="/hinh-thuc-thanh-toan/">Hình thức thanh toán</a></li>
+                                <li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="/hinh-thuc-van-chuyen/">Hình thức vận chuyển</a></li>
+                                <li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="/lien-he/">Liên hệ</a></li>
+                                <li id="menu-item-515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-515"><a href="/tai-khoan/">Tài khoản</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer3 col-md-3 col-sm-3 col-xs-12">
+                    <div id="text-4" class="widget-footer widget_text">
+                        <h3 class="title-sidebar-footer">Facebook</h3>
+                        <div class="textwidget">
+                            <div class="fb-page" data-href="https://www.facebook.com/covekila" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote class="fb-xfbml-parse-ignore" cite="https://www.facebook.com/covekila">
+                                    <p><a href="https://www.facebook.com/covekila">Levantoi.vn</a></p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer4 col-md-3 col-sm-3 col-xs-12">
+                    <div id="text-6" class="widget-footer widget_text">
+                        <h3 class="title-sidebar-footer">Bản đồ</h3>
+                        <div class="textwidget">
+                            <div class="full_mobile"><a href="#" target="_blank"><img src="images/maps.png" alt="" /></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_tags">
+                <div id="woocommerce_product_tag_cloud-2" class="widget-footer woocommerce widget_product_tag_cloud">
+                    <h3 class="title-sidebar-footer">Từ khóa thông dụng</h3>
+                    <div class="tagcloud">
+                        <a href="#" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 22pt;" aria-label="android TV Box (2 sản phẩm)">android TV Box</a>
+                        <a href="/tu-khoa/camera-the-thao/" class="tag-cloud-link tag-link-18 tag-link-position-2" style="font-size: 22pt;" aria-label="Camera thể thao (2 sản phẩm)">Camera thể thao</a>
+                        <a href="/tu-khoa/hdmi/" class="tag-cloud-link tag-link-40 tag-link-position-3" style="font-size: 8pt;" aria-label="hdmi (1 sản phẩm)">hdmi</a>
+                        <a href="/tu-khoa/kiwibox/" class="tag-cloud-link tag-link-17 tag-link-position-4" style="font-size: 22pt;" aria-label="Kiwibox (2 sản phẩm)">Kiwibox</a>
+                        <a href="/tu-khoa/may-chieu/" class="tag-cloud-link tag-link-20 tag-link-position-5" style="font-size: 8pt;" aria-label="máy chiếu (1 sản phẩm)">máy chiếu</a>
+                        <a href="/tu-khoa/o-cam/" class="tag-cloud-link tag-link-19 tag-link-position-6" style="font-size: 8pt;" aria-label="ổ cắm (1 sản phẩm)">ổ cắm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <div class="footer_copyright_left">Copyright © 2017 ShopOnline - All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <div class="box_overlay"></div>
+    <!-- Start Quick Buttons By https://muatheme.com -->
+    <div class='quick-call-button'></div>
+    <div class="show_phone_mobile"><a href="tel:0888090898" title="Gọi ngay"><i class="fa  fa-phone"></i> 0888.090.898</a></div>
+    <link rel='stylesheet' id='lv_css-css' href='css/quick-call-button.css?ver=1.0.3' type='text/css' media='all' />
+    <script type='text/javascript' src='js/scripts.js'></script>
+    <script type='text/javascript' src='js/jquery.validate.min.js'></script>
+    <script type='text/javascript' src='js/jquery.bpopup.min.js'></script>
+    <script type='text/javascript' src='js/underscore.min.js'></script>
+    <script type='text/javascript' src='js/wp-util.min.js'></script>
+    <script type='text/javascript' src='js/add-to-cart-variation.min.js'></script>
+    <script type='text/javascript' src='js/devvn-quick-buy.js'></script>
+    <script type='text/javascript' src='js/devvn_main.js'></script>
+    <script type='text/javascript' src='js/add-to-cart.min.js'></script>
+    <script type='text/javascript' src='js/jquery.blockUI.min.js'></script>
+    <script type='text/javascript' src='js/js.cookie.min.js'></script>
+    <script type='text/javascript' src='js/woocommerce.min.js'></script>
+    <script type='text/javascript' src='js/cart-fragments.min.js'></script>
+    <script type='text/javascript' src='js/wp-embed.min.js'></script>
+    <script type='text/javascript' src='js/drag-quick-call-button.js'></script>
+    <a title="Lên đầu trang" href="#" class="scrollTo_top"><i class="fa fa-arrow-up"></i></a>
+    <div class="cart_floating_right">
+        <div class="cart_floating_right_button"><strong><i class="fa fa-shopping-basket"></i> Giỏ hàng</strong></div>
+        <div class="cart_floating_right_content">
+            <div class="cart_floating_right_title">
+                <span><i class="fa fa-shopping-basket"></i> Giỏ hàng của bạn</span>
+                <span><i class="fa fa-sign-out"></i> Thu nhỏ</span>
+            </div>
+            <div class="cart_floating_right_minicart woocommerce">
+                <div class="floating_popup_cart">
+                    <ul class="cart_list product_list_widget ">
+                        <li class="empty">Chưa có sản phẩm trong giỏ hàng.</li>
+                    </ul><!-- end product list -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    (function($) {
+        $(document).ready(function() {
+            $('.cart_floating_right_button').click(function() {
+                $('.cart_floating_right').addClass('open_float_cart');
+            });
+            $('.cart_floating_right_title').click(function() {
+                $('.cart_floating_right').removeClass('open_float_cart');
+            });
+        });
+    })(jQuery);
+    </script>
+</body>
+
+</html>

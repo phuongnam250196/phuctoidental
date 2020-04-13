@@ -1,0 +1,692 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Demo theme WordPress bán hàng điện tử, điện máy | Công nghệ cho cuộc sống</title>
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel='stylesheet' href='css/styles.css?ver=5.0.4' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/setup_css.css' type='text/css' />
+    <link rel='stylesheet' href='css/devvn-quick-buy.css?ver=2.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/woocommerce-layout.css?ver=3.4.5' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/woocommerce-smallscreen.css?ver=3.4.5' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' href='css/woocommerce.css?ver=3.4.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css' href='css/devvn_style.css?ver=1.02' type='text/css' media='all' />
+    <link rel='stylesheet' id='respon-css' href='css/respon.css?ver=1.02' type='text/css' media='all' />
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+    <link rel="icon" href="images/logo.png" sizes="32x32" />
+    <link rel="icon" href="images/logo.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo.png" />
+    <meta name="msapplication-TileImage" content="images/logo.png" />
+    <script>
+        jQuery( document ).ready(function() {
+        jQuery('img[data-lazy-src]').each(function() 
+        {  
+              var imgsrc = jQuery(this).attr("data-lazy-src");
+              jQuery(this).attr('src',imgsrc);
+        });    
+    var tbay_bottom_header = jQuery('header.header');
+   
+        var CurrentScroll = 0;
+        var tbay_width = jQuery(window).width();
+        var header_height = tbay_bottom_header.height();
+       
+        jQuery(window).scroll(function() {
+            if(tbay_width <= 767) {
+                //alert('ss');
+                var NextScroll = jQuery(this).scrollTop();
+                if (NextScroll > header_height + 30) {
+                    tbay_bottom_header.addClass('sticky-header');
+                  
+                } else {
+                    tbay_bottom_header.removeClass('sticky-header');
+                   
+                }
+               
+            }
+        });
+    });
+    
+    </script>
+</head>
+
+<body data-rsssl=1 class="home woocommerce page-template page-template-templates page-template-home-default page-template-templateshome-default-php page page-id-409 woocommerce-no-js devvn_desktop sidebar_to_menu logo_menu_stick">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header class="header">
+        <div class="top_header">
+            <div class="container">
+                <div class="top_header_left"><i class="fa fa-envelope-open" aria-hidden="true"></i> info@tech360.vn</div>
+                <div class="top_header_middle"><i class="fa fa-phone-square" aria-hidden="true"></i> 0888.090.898</div>
+                <div class="top_header_right"><i class="fa fa-facebook-official" aria-hidden="true"></i> fb.com/tech360</div>
+            </div>
+        </div>
+        <div class="main_header">
+            <div class="container">
+                <h2 class="logo">
+                    <a href="/" title="Công nghệ cho cuộc sống"><img src="images/logo.png" alt="Demo theme Wordpress bán hàng điện tử, điện máy" /></a>
+                </h2>
+                <div class="search_header">
+                    <form role="search" method="get" class="woocommerce-product-search" action="/">
+                        <input type="search" id="woocommerce-product-search-field" class="search-field" placeholder="Tìm kiếm sản phẩm" value="" name="s" title="Search for:" />
+                        <button type="submit" class="btn btn-default" id="searchsubmit">Tìm kiếm</button>
+                        <input type="hidden" name="post_type" value="product" />
+                    </form>
+                </div>
+                <div class="cart_header woocommerce">
+                    <div class="popup_cart_hover">
+                        <a class="cart-contents" href="/gio-hang/" title="Hiển thị giỏ hàng">
+                            <span>Giỏ hàng của bạn</span>
+                            <small>Chưa có sản phẩm</small>
+                        </a>
+                        <div class="popup_cart">
+                            <ul class="cart_list product_list_widget ">
+                                <li class="empty">Chưa có sản phẩm trong giỏ hàng.</li>
+                            </ul><!-- end product list -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_header_wrap">
+            <div class="container">
+                <div class="danhmuc_sanpham_menu">
+                    <h3 class="title-sidebar click_open_mega">Danh mục sản phẩm<i class="fa fa-bars"></i></h3>
+                    <div class="devvn_mega_menu_wrap">
+                        <div class="devvn_mega_menu_box">
+                            <ul class="devvn_mega_menu_ul">
+                                <li class="">
+                                    <a href="#" title="Android TV Box"><i class="devvn_mega_menu_icon" style="background: url(images/android_box.png) no-repeat center center;"></i>Android TV Box</a>
+                                    <i class="click_open_sub_megamenu">+</i>
+                                    <div class="devvn_sub_mega_content" style="background: #fff url(images/androidbox.png) no-repeat right bottom;">
+                                        <div class="devvn_sub_mega_content_box devvn-megamenu-3-column">
+                                            <div class="devvn-mega-sub-column-3 devvn_sub_mega_content_column">
+                                                <div class="devvn_mega_menu_title">
+                                                    <h2>Sub menu 1</h2>
+                                                    <ul>
+                                                        <li><a href="#" title="Sub menu  dm1">Sub menu dm1</a></li>
+                                                        <li><a href="#" title="Sub menu 1">Sub menu 1</a></li>
+                                                        <li><a href="#" title="Sub menu 1">Sub menu 1</a></li>
+                                                        <li><a href="#" title="Sub menu 1">Sub menu 1</a></li>
+                                                        <li><a href="" title="sub 121331">sub 121331</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="devvn-mega-sub-column-3 devvn_sub_mega_content_column">
+                                                <div class="devvn_mega_menu_title">
+                                                    <h2>Sub menu 2</h2>
+                                                    <ul>
+                                                        <li><a href="#" title="Sub menu 2">Sub menu 2</a></li>
+                                                        <li><a href="#" title="Sub menu 2">Sub menu 2</a></li>
+                                                        <li><a href="#" title="Sub menu 2">Sub menu 2</a></li>
+                                                        <li><a href="#" title="Sub menu 2">Sub menu 2</a></li>
+                                                        <li><a href="#" title="Sub menu 2">Sub menu 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="no-have-mega">
+                                    <a href="#" title="Phụ Kiện Android Box"><i class="devvn_mega_menu_icon" style="background: url(images/phu_kien_android_box.png) no-repeat center center;"></i>Phụ Kiện Android Box</a>
+                                    <i class="click_open_sub_megamenu">+</i>
+                                    <ul class="devvn_sub_menu">
+                                        <li>
+                                            <a href="#" title="Phụ kiện 1">Phụ kiện 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Phụ kiện 2">Phụ kiện 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Phụ kiện 3">Phụ kiện 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="no-have-mega">
+                                    <a href="#" title="Camera Thông Minh"><i class="devvn_mega_menu_icon" style="background: url(images/camera_thong_minh.png) no-repeat center center;"></i>Camera Thông Minh</a>
+                                </li>
+                                <li class="no-have-mega">
+                                    <a href="#" title="Kính Thực Tế Ảo"><i class="devvn_mega_menu_icon" style="background: url(images/141230510593.png) no-repeat center center;"></i>Kính Thực Tế Ảo</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" title="Smart Watch"><i class="devvn_mega_menu_icon" style="background: url(images/smart_watch.png) no-repeat center center;"></i>Smart Watch</a>
+                                    <i class="click_open_sub_megamenu">+</i>
+                                    <div class="devvn_sub_mega_content" style="background: #fff url(images/camera_thong_minh_to.png) no-repeat right bottom;">
+                                        <div class="devvn_sub_mega_content_box devvn-megamenu-3-column">
+                                            <div class="devvn-mega-sub-column-3 devvn_sub_mega_content_column">
+                                                <div class="devvn_mega_menu_title">
+                                                    <h2>Sub Smart Watch</h2>
+                                                    <ul>
+                                                        <li><a href="#" title="Smart Watch 1">Smart Watch 1</a></li>
+                                                        <li><a href="#" title="Smart Watch 2">Smart Watch 2</a></li>
+                                                        <li><a href="#" title="Smart Watch">Smart Watch</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="devvn-mega-sub-column-3 devvn_sub_mega_content_column">
+                                                <div class="devvn_mega_menu_title">
+                                                    <h2>Sub Smart Watch 2</h2>
+                                                    <ul>
+                                                        <li><a href="" title="Sub Smart Watch">Sub Smart Watch</a></li>
+                                                        <li><a href="" title="Sub Smart Watch 2 2">Sub Smart Watch 2 2</a></li>
+                                                        <li><a href="" title="Sub Smart Watch 2 3">Sub Smart Watch 2 3</a></li>
+                                                        <li><a href="" title="Sub Smart Watch 2 4">Sub Smart Watch 2 4</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="no-have-mega">
+                                    <a href="#" title="Android TV Box"><i class="devvn_mega_menu_icon" style="background: url(images/android_box.png) no-repeat center center;"></i>Android TV Box</a>
+                                </li>
+                                <li class="no-have-mega">
+                                    <a href="#" title="Android TV Box"><i class="devvn_mega_menu_icon" style="background: url(images/141230510593.png) no-repeat center center;"></i>Android TV Box</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="button_open_menu"><i class="fa fa-bars"></i> Menu</a>
+                <div class="menu_header">
+                    <ul id="menu-main-menu" class="menu">
+                        <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-31"><a href="/trang-chu/">Trang chủ</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-452"><a href="/trang-chu/">Trang chủ 1 – Full width</a></li>
+                                <li id="menu-item-422" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-422"><a href="/trang-chu-2/">Trang chủ 2 – Full width + Product Menu</a></li>
+                                <li id="menu-item-421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-409 current_page_item menu-item-421"><a href="/">Trang chủ 3 – Mặc định – Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-29"><a href="/tin-tuc/">Tin tức</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-181" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-181"><a href="/category/camera-thong-minh/">Camera Thông Minh</a></li>
+                                <li id="menu-item-180" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-180"><a href="/category/android-box/">Android Box</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-183" class="menu-item menu-item-type-post_type_archive menu-item-object-videos menu-item-183"><a href="/videos/">Videos</a></li>
+                        <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="/ho-tro-khach-hang/">Hỗ trợ khách hàng</a></li>
+                        <li id="menu-item-232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232"><a href="/he-thong-dai-ly/">Hệ thống đại lý</a></li>
+                        <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="/lien-he/">Liên hệ</a></li>
+                        <li id="menu-item-516" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-516"><a href="/tai-khoan/">Tài khoản</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="end_navpage"></div>
+    </header>
+    <!-- Thay đổi ở đây -->
+    <div class="main_body">
+        <div class="container">
+            <div class="row row-padding-15">
+                <div id="container" class="main_container col-md-9 col-sm-9 col-xs-12 col-sm-push-3">
+                    <div id="content" role="main">
+                        <nav class="woocommerce-breadcrumb"><a href="https://tech360.vn">Trang chủ</a>&nbsp;/&nbsp;Camera đa năng</nav>
+                        <h2 class="page-title">Camera đa năng</h2>
+                        <div class="term-description">
+                            <p><em><strong>Mua ngay camera đa năng, camera hành động, action cam giá rẻ,</strong></em></p>
+                            <p><span style="color: #0000ff;"><em><strong>Hà Nội: &nbsp;0938.94.1111 – 58 Thái Hà</strong></em></span></p>
+                            <p><span style="color: #0000ff;"><em><strong>HCM: 0938.94.1115 – 9/7 Lý Văn Phức, Quận 1</strong></em></span></p>
+                        </div>
+                        <div class="woocommerce-notices-wrapper"></div>
+                        <p class="woocommerce-result-count">
+                            Hiển thị 1–16 của 29 sản phẩm</p>
+                        <form class="woocommerce-ordering" method="get">
+                            <select name="orderby" class="orderby" aria-label="Shop order">
+                                <option value="menu_order" selected="selected">Thứ tự mặc định</option>
+                                <option value="popularity">Thứ tự theo mức độ phổ biến</option>
+                                <option value="rating">Thứ tự theo điểm đánh giá</option>
+                                <option value="date">Mới nhất</option>
+                                <option value="price">Thứ tự theo giá: thấp đến cao</option>
+                                <option value="price-desc">Thứ tự theo giá: cao xuống thấp</option>
+                            </select>
+                            <input type="hidden" name="paged" value="1">
+                        </form>
+                        <ul class="products columns-4">
+                            <li class="post-1149 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd product_tag-camera-hanh-trinh product_tag-camera-the-thao product_tag-sjcam first instock featured shipping-taxable purchasable product-type-simple" style="height: 325px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/action-camera-sjcam-4000-lcd-2-inch-camera-thao-gia-re" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Giảm giá sốc!</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2016/12/sj4000-lcd-2-inch-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2016/12/sj4000-lcd-2-inch-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2016/12/sj4000-lcd-2-inch-100x100.jpg 100w, https://tech360.vn/wp-content/uploads/2016/12/sj4000-lcd-2-inch.jpg 600w, https://tech360.vn/wp-content/uploads/2016/12/sj4000-lcd-2-inch-150x150.jpg 150w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">Action camera SJ4000 LCD 2 Inch- Cam thể thao giá rẻ</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=1149" data-quantity="1" data-product_id="1149" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_1149">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 4.33 5 sao"><span style="width:86.6%">Được xếp hạng <strong class="rating">4.33</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">12</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">1.150.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-5262 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd product_tag-camera-hanh-dong product_tag-camera-the-thao product_tag-sjcam product_tag-sjcam-sj8-pro  instock shipping-taxable purchasable product-type-simple" style="height: 325px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/action-camera-sjcam-sj8-pro" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Mới 2018</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2016/12/sjcam-sj8-pro-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2016/12/sjcam-sj8-pro-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2016/12/sjcam-sj8-pro-100x100.jpg 100w, https://tech360.vn/wp-content/uploads/2016/12/sjcam-sj8-pro.jpg 600w, https://tech360.vn/wp-content/uploads/2016/12/sjcam-sj8-pro-150x150.jpg 150w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">Action camera SJCAM SJ8 Pro 4k wifi</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=5262" data-quantity="1" data-product_id="5262" data-product_sku="SJ8PRO" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_5262">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 4.83 5 sao"><span style="width:96.6%">Được xếp hạng <strong class="rating">4.83</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">6</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">4.950.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-5751 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_tag-camera-giam-sat product_tag-camera-hanh-dong product_tag-sjcam  instock shipping-taxable purchasable product-type-simple" style="height: 325px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/body-camera-sjcam-a10-camera-giam-sat-ca-nhan" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Hết hàng</span>
+                                        <img width="225" height="225" src="https://tech360.vn/wp-content/uploads/2018/03/images-min.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Sjcam A10" srcset="https://tech360.vn/wp-content/uploads/2018/03/images-min.jpg 225w, https://tech360.vn/wp-content/uploads/2018/03/images-min-100x100.jpg 100w, https://tech360.vn/wp-content/uploads/2018/03/images-min-150x150.jpg 150w" sizes="(max-width: 225px) 100vw, 225px">
+                                        <h2 class="woocommerce-loop-product__title">Body camera SJCAM A10 – Camera giám sát cá nhân</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=5751" data-quantity="1" data-product_id="5751" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_5751">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 5.00 5 sao"><span style="width:100%">Được xếp hạng <strong class="rating">5.00</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">1</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">2.290.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-1441 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd product_tag-camera-hanh-trinh product_tag-camera-the-thao product_tag-sjcam last instock shipping-taxable purchasable product-type-simple" style="height: 325px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/action-cam-sjcam-m20" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Giảm giá sốc</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2016/12/m20-4k-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2016/12/m20-4k-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2016/12/m20-4k-100x100.jpg 100w, https://tech360.vn/wp-content/uploads/2016/12/m20-4k.jpg 600w, https://tech360.vn/wp-content/uploads/2016/12/m20-4k-150x150.jpg 150w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">ACTION CAM SJCAM M20 4K Wifi</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=1441" data-quantity="1" data-product_id="1441" data-product_sku="SJM20" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_1441">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 4.18 5 sao"><span style="width:83.6%">Được xếp hạng <strong class="rating">4.18</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">17</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">2.240.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-5892 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd first instock shipping-taxable purchasable product-type-simple" style="height: 331px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/action-camera-sjcam-m20-air" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2016/12/m20-air-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2016/12/m20-air-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2016/12/m20-air-150x150.jpg 150w, https://tech360.vn/wp-content/uploads/2016/12/m20-air.jpg 600w, https://tech360.vn/wp-content/uploads/2016/12/m20-air-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">Action Camera SJCAM M20 Air</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=5892" data-quantity="1" data-product_id="5892" data-product_sku="M20AIR" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_5892">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 4.50 5 sao"><span style="width:90%">Được xếp hạng <strong class="rating">4.50</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">2</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">1.450.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-5255 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd  instock shipping-taxable purchasable product-type-simple" style="height: 331px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/action-camera-sjcam-sj8-air" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Mới 2018</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2016/12/sj8-air-3-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2016/12/sj8-air-3-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2016/12/sj8-air-3-100x100.jpg 100w, https://tech360.vn/wp-content/uploads/2016/12/sj8-air-3.jpg 600w, https://tech360.vn/wp-content/uploads/2016/12/sj8-air-3-150x150.jpg 150w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">Action camera SJCAM SJ8 Air</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=5255" data-quantity="1" data-product_id="5255" data-product_sku="SJ8AIR" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_5255">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 5.00 5 sao"><span style="width:100%">Được xếp hạng <strong class="rating">5.00</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">2</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">2.490.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-5259 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd  instock sale shipping-taxable purchasable product-type-simple" style="height: 331px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/action-camera-sjcam-sj8-plus" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Mới 2018</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2016/12/SJ8-pro-1-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2016/12/SJ8-pro-1-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2016/12/SJ8-pro-1-100x100.jpg 100w, https://tech360.vn/wp-content/uploads/2016/12/SJ8-pro-1.jpg 600w, https://tech360.vn/wp-content/uploads/2016/12/SJ8-pro-1-150x150.jpg 150w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">Action camera SJACM SJ8 Plus 4K Wifi</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=5259" data-quantity="1" data-product_id="5259" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_5259">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 5.00 5 sao"><span style="width:100%">Được xếp hạng <strong class="rating">5.00</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">2</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><del><span class="woocommerce-Price-amount amount">4.349.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></del> <ins><span class="woocommerce-Price-amount amount">4.149.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></ins></span>
+                            </li>
+                            <li class="post-4701 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd last instock shipping-taxable purchasable product-type-simple" style="height: 331px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/combo-sjcam-sj4000-wifi-pin-the-16g" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Combo giá sốc</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2017/11/combo-sj4000-wifi-pin-the-16g-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2017/11/combo-sj4000-wifi-pin-the-16g-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2017/11/combo-sj4000-wifi-pin-the-16g-150x150.jpg 150w, https://tech360.vn/wp-content/uploads/2017/11/combo-sj4000-wifi-pin-the-16g.jpg 600w, https://tech360.vn/wp-content/uploads/2017/11/combo-sj4000-wifi-pin-the-16g-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">Combo SJCAM SJ4000 Wifi + Pin + Thẻ 16Gb Class 10</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=4701" data-quantity="1" data-product_id="4701" data-product_sku="CM4000W" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_4701">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 4.33 5 sao"><span style="width:86.6%">Được xếp hạng <strong class="rating">4.33</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">6</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">1.780.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-5264 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-sjcam-hd product_tag-sjcam product_tag-sjcam-sjdash-30 product_tag-sjdash first instock shipping-taxable purchasable product-type-simple" style="height: 310px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/sjcam-dashcam-m30-plus" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Mới 2018</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2016/12/sjcam-sjdash-m30-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2016/12/sjcam-sjdash-m30-300x300.png 300w, https://tech360.vn/wp-content/uploads/2016/12/sjcam-sjdash-m30-100x100.png 100w, https://tech360.vn/wp-content/uploads/2016/12/sjcam-sjdash-m30.png 600w, https://tech360.vn/wp-content/uploads/2016/12/sjcam-sjdash-m30-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">SJCAM DASHCAM M30+ (Plus)</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=5264" data-quantity="1" data-product_id="5264" data-product_sku="M30+" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_5264">Thêm vào giỏ</a> </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">2.290.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-4724 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd  instock shipping-taxable purchasable product-type-simple" style="height: 310px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/combo-sjcam-m20-pin-16gb-class-10" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Combo giá sốc</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2017/11/sjcam-m20-pin-the-16g-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2017/11/sjcam-m20-pin-the-16g-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2017/11/sjcam-m20-pin-the-16g-150x150.jpg 150w, https://tech360.vn/wp-content/uploads/2017/11/sjcam-m20-pin-the-16g.jpg 600w, https://tech360.vn/wp-content/uploads/2017/11/sjcam-m20-pin-the-16g-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">Combo SJCAM M20 + Pin + Thẻ 16Gb Class 10</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=4724" data-quantity="1" data-product_id="4724" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_4724">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 4.80 5 sao"><span style="width:96%">Được xếp hạng <strong class="rating">4.80</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">5</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">2.580.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-1697 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd product_tag-action-camera product_tag-camera-hanh-trinh product_tag-camera-the-thao product_tag-phu-kien-sjcam  instock shipping-taxable purchasable product-type-simple" style="height: 310px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/action-cam-sjcam-sj5000x-elite-4k-wifi" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Hết hàng</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2016/12/sj5000x-elite-4k-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2016/12/sj5000x-elite-4k-300x300.png 300w, https://tech360.vn/wp-content/uploads/2016/12/sj5000x-elite-4k-100x100.png 100w, https://tech360.vn/wp-content/uploads/2016/12/sj5000x-elite-4k.png 600w, https://tech360.vn/wp-content/uploads/2016/12/sj5000x-elite-4k-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">ACTION CAM SJCAM SJ5000X ELITE 4K WIFI</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=1697" data-quantity="1" data-product_id="1697" data-product_sku="SJ5000X" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_1697">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 4.56 5 sao"><span style="width:91.2%">Được xếp hạng <strong class="rating">4.56</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">9</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">2.790.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-1158 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd product_tag-action-camera product_tag-camera-hanh-dong product_tag-camera-hanh-trinh product_tag-camera-the-thao product_tag-may-chieu-panasonic product_tag-sjcam last instock shipping-taxable purchasable product-type-simple" style="height: 310px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/action-camera-sjcam-4000-wifi-lcd-2-inch" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Giảm giá sốc</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2016/12/sj40000-wifi-lcd-2-inch-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2016/12/sj40000-wifi-lcd-2-inch-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2016/12/sj40000-wifi-lcd-2-inch-100x100.jpg 100w, https://tech360.vn/wp-content/uploads/2016/12/sj40000-wifi-lcd-2-inch.jpg 600w, https://tech360.vn/wp-content/uploads/2016/12/sj40000-wifi-lcd-2-inch-150x150.jpg 150w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">Action camera SJ4000 wifi LCD 2 Inch</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=1158" data-quantity="1" data-product_id="1158" data-product_sku="4000WF" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_1158">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 4.89 5 sao"><span style="width:97.8%">Được xếp hạng <strong class="rating">4.89</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">18</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">1.450.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-1858 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd product_tag-camera-hanh-trinh product_tag-camera-the-thao product_tag-sjcam first instock shipping-taxable purchasable product-type-simple" style="height: 325px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/camera-thao-sjcam-x1000-wifi-limited-edition-2-0" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Dừng sản xuất</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2016/12/x1000-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2016/12/x1000-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2016/12/x1000-100x100.jpg 100w, https://tech360.vn/wp-content/uploads/2016/12/x1000.jpg 600w, https://tech360.vn/wp-content/uploads/2016/12/x1000-150x150.jpg 150w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">CAMERA THỂ THAO SJCAM X1000 WIFI LIMITED EDITION 2.0</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=1858" data-quantity="1" data-product_id="1858" data-product_sku="SJCAM X1000 WIFI" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_1858">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 4.00 5 sao"><span style="width:80%">Được xếp hạng <strong class="rating">4.00</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">1</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">1.890.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-935 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd product_tag-camera-the-thao product_tag-sjcam  instock shipping-taxable purchasable product-type-simple" style="height: 325px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/camera-thao-sjcam-sj6-legend-4k-wifi-ha-noi" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Hết hàng</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2016/12/sj6-legend-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2016/12/sj6-legend-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2016/12/sj6-legend-100x100.jpg 100w, https://tech360.vn/wp-content/uploads/2016/12/sj6-legend.jpg 600w, https://tech360.vn/wp-content/uploads/2016/12/sj6-legend-150x150.jpg 150w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">Camera thể thao SJCAM SJ6 Legend 4K WiFi</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=935" data-quantity="1" data-product_id="935" data-product_sku="SJ6LEGEND" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_935">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 5.00 5 sao"><span style="width:100%">Được xếp hạng <strong class="rating">5.00</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">8</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">3.190.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-4725 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd  instock shipping-taxable purchasable product-type-simple" style="height: 325px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/combo-sjcam-sj6-legend-pin-16gb-class-10" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Tạm hết hàng</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2017/11/sj6-legend-pin-the-16g-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2017/11/sj6-legend-pin-the-16g-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2017/11/sj6-legend-pin-the-16g-150x150.jpg 150w, https://tech360.vn/wp-content/uploads/2017/11/sj6-legend-pin-the-16g.jpg 600w, https://tech360.vn/wp-content/uploads/2017/11/sj6-legend-pin-the-16g-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">Combo SJCAM SJ6 Legend + Pin + Thẻ 16Gb Class 10</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=4725" data-quantity="1" data-product_id="4725" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_4725">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 5.00 5 sao"><span style="width:100%">Được xếp hạng <strong class="rating">5.00</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">1</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">3.550.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                            <li class="post-965 product type-product status-publish has-post-thumbnail product_cat-camera-da-nang product_cat-camera-hanh-trinh product_cat-camera-the-thao product_cat-sjcam-hd product_tag-camera-hanh-trinh product_tag-camera-the-thao product_tag-sjcam last instock shipping-taxable purchasable product-type-simple" style="height: 325px;">
+                                <div class="shop_loop_box">
+                                    <a href="https://tech360.vn/camera-thao-sjcam-sj7-star-4k-wifi-2" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <span class="onsale">Hết hàng</span>
+                                        <img width="300" height="300" src="https://tech360.vn/wp-content/uploads/2016/12/sj7-star-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://tech360.vn/wp-content/uploads/2016/12/sj7-star-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2016/12/sj7-star-100x100.jpg 100w, https://tech360.vn/wp-content/uploads/2016/12/sj7-star.jpg 600w, https://tech360.vn/wp-content/uploads/2016/12/sj7-star-150x150.jpg 150w" sizes="(max-width: 300px) 100vw, 300px">
+                                        <h2 class="woocommerce-loop-product__title">Camera thể thao SJCAM SJ7 Star 4K WiFi</h2>
+                                    </a><a rel="nofollow" href="/camera-da-nang?add-to-cart=965" data-quantity="1" data-product_id="965" data-product_sku="SJ7STAR" class="button product_type_simple add_to_cart_button ajax_add_to_cart" id="tech_addtocart_965">Thêm vào giỏ</a> </div>
+                                <div class="woocommerce-product-rating">
+                                    <div class="star-rating" role="img" aria-label="Được xếp hạng 4.64 5 sao"><span style="width:92.8%">Được xếp hạng <strong class="rating">4.64</strong> 5 sao</span></div><a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">14</span> đánh giá của khách hàng)</a>
+                                </div>
+                                <span class="price"><span class="woocommerce-Price-amount amount">3.690.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                            </li>
+                        </ul>
+                        <nav class="woocommerce-pagination">
+                            <ul class="page-numbers">
+                                <li><span aria-current="page" class="page-numbers current">1</span></li>
+                                <li><a class="page-numbers" href="https://tech360.vn/camera-da-nang/page/2">2</a></li>
+                                <li><a class="next page-numbers" href="https://tech360.vn/camera-da-nang/page/2">→</a></li>
+                            </ul>
+                        </nav>
+                        <div class="section_html tinymce">
+                            <h1><span style="font-size: 14pt;">Action cam – Camera đa năng giá rẻ, chính hãng tại Tech360</span></h1>
+                            <p><a href="https://tech360.vn/camera-da-nang"><strong>Camera đa năng</strong></a> mang đến cho bạn nhiều lựa chọn sử dụng như dùng gắn lên ô tô, xe máy, xe đạp, mũ bảo hiểm, lên người để ghi lại hành trình đã đi qua, dùng khi đi du lịch, phượt, thám hiểm, chơi các trò chơi mạo hiểm, chơi thể thao, dùng quay các video timelaspe, video trên không flycam, dùng ghi hình các hoạt động vui chơi, tiêc tùng… Tech360 phân phối chính hãng các sản phẩm <a href="https://tech360.vn/camera-hanh-trinh">camera hành trình</a>, <a href="https://tech360.vn/camera-the-thao">camera thể thao</a>, camera dành cho dân phượt… với mức giá ưu đãi cùng nhiều chương trình khuyến mại giá trị.</p>
+                            <p>Đặt hàng trực tuyến trên website hoặc liên hệ Tech360 để được tư vấn miễn phí trước khi quyết định lựa chọn sản phẩm.</p>
+                        </div>
+                    </div>
+                </div>
+                <aside id="sidebar" class="sidebar col-md-3 col-sm-3 col-xs-12 col-sm-pull-9" role="complementary" itemscope="" itemtype="http://schema.org/WPSideBar">
+                    <div id="woocommerce_product_categories-3" class="widget block-sidebar woocommerce widget_product_categories">
+                        <h3 class="title-sidebar">Loại sản phẩm</h3>
+                        <ul class="product-categories">
+                            <li class="cat-item cat-item-81"><a href="https://tech360.vn/camera-hanh-trinh">Camera hành trình</a> <span class="count">(27)</span></li>
+                            <li class="cat-item cat-item-80"><a href="https://tech360.vn/camera-the-thao">Camera thể thao</a> <span class="count">(23)</span></li>
+                            <li class="cat-item cat-item-83"><a href="https://tech360.vn/gopro-hero">Gopro Hero</a> <span class="count">(2)</span></li>
+                            <li class="cat-item cat-item-82"><a href="https://tech360.vn/sjcam-hd">SJCAM HD</a> <span class="count">(25)</span></li>
+                        </ul>
+                    </div>
+                    <div id="woocommerce_price_filter-2" class="widget block-sidebar woocommerce widget_price_filter">
+                        <h3 class="title-sidebar">Lọc theo giá</h3>
+                        <form method="get" action="https://tech360.vn/camera-da-nang/">
+                            <div class="price_slider_wrapper">
+                                <div class="price_slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="">
+                                    <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 51.0503%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 51.0503%;"></span>
+                                </div>
+                                <div class="price_slider_amount" data-step="10">
+                                    <input type="text" id="min_price" name="min_price" value="1150000" data-min="1150000" placeholder="Giá thấp nhất" style="display: none;">
+                                    <input type="text" id="max_price" name="max_price" value="5999000" data-max="5999000" placeholder="Giá cao nhất" style="display: none;">
+                                    <button type="submit" class="button">Lọc</button>
+                                    <div class="price_label" style="">
+                                        Giá <span class="from">1.150.000&nbsp;₫</span> — <span class="to">3.625.430&nbsp;₫</span>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="woocommerce_layered_nav-7" class="widget block-sidebar woocommerce widget_layered_nav woocommerce-widget-layered-nav">
+                        <h3 class="title-sidebar">CẢM BIẾN</h3>
+                        <ul class="woocommerce-widget-layered-nav-list">
+                            <li class="woocommerce-widget-layered-nav-list__item wc-layered-nav-term "><a rel="nofollow" href="https://tech360.vn/camera-da-nang?filter_cam-bien=aptina">APTINA</a> <span class="count">(7)</span></li>
+                            <li class="woocommerce-widget-layered-nav-list__item wc-layered-nav-term "><a rel="nofollow" href="https://tech360.vn/camera-da-nang?filter_cam-bien=panasonic">PANASONIC</a> <span class="count">(3)</span></li>
+                            <li class="woocommerce-widget-layered-nav-list__item wc-layered-nav-term "><a rel="nofollow" href="https://tech360.vn/camera-da-nang?filter_cam-bien=sony">SONY</a> <span class="count">(2)</span></li>
+                        </ul>
+                    </div>
+                    <div id="woocommerce_layered_nav-8" class="widget block-sidebar woocommerce widget_layered_nav woocommerce-widget-layered-nav">
+                        <h3 class="title-sidebar">ĐỘ PHÂN GIẢI HÌNH ẢNH</h3>
+                        <ul class="woocommerce-widget-layered-nav-list">
+                            <li class="woocommerce-widget-layered-nav-list__item wc-layered-nav-term "><a rel="nofollow" href="https://tech360.vn/camera-da-nang?filter_do-phan-giai-hinh-anh=12mp">12MP</a> <span class="count">(8)</span></li>
+                            <li class="woocommerce-widget-layered-nav-list__item wc-layered-nav-term "><a rel="nofollow" href="https://tech360.vn/camera-da-nang?filter_do-phan-giai-hinh-anh=14mp">14MP</a> <span class="count">(1)</span></li>
+                            <li class="woocommerce-widget-layered-nav-list__item wc-layered-nav-term "><a rel="nofollow" href="https://tech360.vn/camera-da-nang?filter_do-phan-giai-hinh-anh=16mp">16MP</a> <span class="count">(3)</span></li>
+                        </ul>
+                    </div>
+                    <div id="woocommerce_layered_nav-9" class="widget block-sidebar woocommerce widget_layered_nav woocommerce-widget-layered-nav">
+                        <h3 class="title-sidebar">ĐỘ PHÂN GIẢI VIDEO</h3>
+                        <ul class="woocommerce-widget-layered-nav-list">
+                            <li class="woocommerce-widget-layered-nav-list__item wc-layered-nav-term "><a rel="nofollow" href="https://tech360.vn/camera-da-nang?filter_do-phan-giai-video=2k">2K</a> <span class="count">(2)</span></li>
+                            <li class="woocommerce-widget-layered-nav-list__item wc-layered-nav-term "><a rel="nofollow" href="https://tech360.vn/camera-da-nang?filter_do-phan-giai-video=4k">4K</a> <span class="count">(3)</span></li>
+                            <li class="woocommerce-widget-layered-nav-list__item wc-layered-nav-term "><a rel="nofollow" href="https://tech360.vn/camera-da-nang?filter_do-phan-giai-video=full-hd-1080p">Full HD 1080p</a> <span class="count">(7)</span></li>
+                        </ul>
+                    </div>
+                    <div id="news_category_widget-2" class="widget block-sidebar news_category_widget">
+                        <h3 class="title-sidebar">Tin tức</h3>
+                        <ul class="news_list">
+                            <li class="has-thumbnail">
+                                <a href="https://tech360.vn/top-7-may-chieu-van-phong-dang-mua-nhat-hien-nay" title="Top 7 máy chiếu văn phòng đáng mua nhất hiện nay">
+                                    <img width="150" height="150" src="https://tech360.vn/wp-content/uploads/2019/05/vp-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Máy chiếu văn phòng" srcset="https://tech360.vn/wp-content/uploads/2019/05/vp-150x150.jpg 150w, https://tech360.vn/wp-content/uploads/2019/05/vp-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2019/05/vp-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px">
+                                    <h3>Top 7 máy chiếu văn phòng đáng mua nhất hiện nay</h3>
+                                </a>
+                            </li>
+                            <li class="has-thumbnail">
+                                <a href="https://tech360.vn/black-friday-2018-chi-mot-ngay-duy-nhat" title="Black Friday 2018 – Chỉ một ngày duy nhất">
+                                    <img width="150" height="150" src="https://tech360.vn/wp-content/uploads/2018/11/deal-black-firday-2018-tech360-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://tech360.vn/wp-content/uploads/2018/11/deal-black-firday-2018-tech360-150x150.jpg 150w, https://tech360.vn/wp-content/uploads/2018/11/deal-black-firday-2018-tech360-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px">
+                                    <h3>Black Friday 2018 – Chỉ một ngày duy nhất</h3>
+                                </a>
+                            </li>
+                            <li class="has-thumbnail">
+                                <a href="https://tech360.vn/5-nguyen-tac-can-nho-cho-chuyen-di-phuot-an-toan-phuot-theo-doan" title="5 Nguyên tắc cần nhớ cho chuyến đi phượt an toàn ( phượt theo đoàn)">
+                                    <img width="150" height="150" src="https://tech360.vn/wp-content/uploads/2018/07/kinh-nghiem-di-phuot-an-toan-5-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://tech360.vn/wp-content/uploads/2018/07/kinh-nghiem-di-phuot-an-toan-5-150x150.jpg 150w, https://tech360.vn/wp-content/uploads/2018/07/kinh-nghiem-di-phuot-an-toan-5-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2018/07/kinh-nghiem-di-phuot-an-toan-5-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px">
+                                    <h3>5 Nguyên tắc cần nhớ cho chuyến đi phượt an toàn ( phượt theo đoàn)</h3>
+                                </a>
+                            </li>
+                            <li class="has-thumbnail">
+                                <a href="https://tech360.vn/top-3-mau-camera-the-thao-quay-4k-hoan-hao-va-sac-net" title="Top 3 mẫu camera thể thao quay 4K hoàn hảo và sắc nét">
+                                    <img width="150" height="150" src="https://tech360.vn/wp-content/uploads/2018/07/3-mau-sjcam-ho-tro-do-phan-giai-4k-1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://tech360.vn/wp-content/uploads/2018/07/3-mau-sjcam-ho-tro-do-phan-giai-4k-1-150x150.jpg 150w, https://tech360.vn/wp-content/uploads/2018/07/3-mau-sjcam-ho-tro-do-phan-giai-4k-1-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2018/07/3-mau-sjcam-ho-tro-do-phan-giai-4k-1-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px">
+                                    <h3>Top 3 mẫu camera thể thao quay 4K hoàn hảo và sắc nét</h3>
+                                </a>
+                            </li>
+                            <li class="has-thumbnail">
+                                <a href="https://tech360.vn/top-6-diem-du-lich-he-khong-the-bo-qua-nam-2018" title="Top 6 điểm du lịch hè không thể bỏ qua năm 2018">
+                                    <img width="150" height="150" src="https://tech360.vn/wp-content/uploads/2018/06/top-6-diem-du-lich-he-khong-the-bo-qua-nam-2018-phu-quoc-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="https://tech360.vn/wp-content/uploads/2018/06/top-6-diem-du-lich-he-khong-the-bo-qua-nam-2018-phu-quoc-150x150.jpg 150w, https://tech360.vn/wp-content/uploads/2018/06/top-6-diem-du-lich-he-khong-the-bo-qua-nam-2018-phu-quoc-300x300.jpg 300w, https://tech360.vn/wp-content/uploads/2018/06/top-6-diem-du-lich-he-khong-the-bo-qua-nam-2018-phu-quoc-100x100.jpg 100w" sizes="(max-width: 150px) 100vw, 150px">
+                                    <h3>Top 6 điểm du lịch hè không thể bỏ qua năm 2018</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="videos_category_widget-2" class="widget block-sidebar videos_category_widget">
+                        <h3 class="title-sidebar">Videos</h3>
+                    </div>
+                    <div id="widget_sp_image-5" class="widget block-sidebar widget_sp_image">
+                        <h3 class="title-sidebar">Máy chiếu văn phòng-lớp học</h3><img width="427" height="640" alt="Máy chiếu văn phòng-lớp học" class="attachment-full" style="max-width: 100%;" src="https://tech360.vn/wp-content/uploads/2016/11/banner-tyco-t35-20160722204411.jpg">
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <!-- End thay đổi -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer_wrap">
+                <div class="footer1 col-md-3 col-sm-3 col-xs-12">
+                    <div id="text-2" class="widget-footer widget_text">
+                        <h3 class="title-sidebar-footer">Thông tin liên hệ</h3>
+                        <div class="textwidget">
+                            <p><b><span style="color: red">TECH360 HÀ NỘI</span></b><br />
+                                Địa chỉ: Số 58 Thái Hà , Đống Đa<br />
+                                Điện thoại: (+84) 243.944.7979<br />
+                                Hotline: 0938.94.1111<br />
+                                <b><span style="color: red">TECH360 HCM</span></b><br />
+                                Địa chỉ: 9/7 Lý Văn Phức, P. Tân Định, Q1<br />
+                                Hotline: 0938.94.1115<br />
+                                <b><span style="color: red">EMAIL TECH360<b></b></span><b><br />
+                                        tech360.com.vn@gmail.com</b></b></p>
+                        </div>
+                    </div>
+                    <div id="text-5" class="widget-footer widget_text">
+                        <h3 class="title-sidebar-footer">Theo dõi SHOP</h3>
+                        <div class="textwidget">
+                            <ul class="list-socials">
+                                <li><a href="#" target="_blank" title=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#" title=""><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer2 col-md-3 col-sm-3 col-xs-12">
+                    <div id="nav_menu-2" class="widget-footer widget_nav_menu">
+                        <h3 class="title-sidebar-footer">Trợ giúp</h3>
+                        <div class="menu-menu-tro-giup-container">
+                            <ul id="menu-menu-tro-giup" class="menu">
+                                <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a href="/gioi-thieu/">Giới thiệu</a></li>
+                                <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="/tin-tuc/">Tin tức</a></li>
+                                <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="/ho-tro-khach-hang/">Hỗ trợ khách hàng</a></li>
+                                <li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="/hinh-thuc-thanh-toan/">Hình thức thanh toán</a></li>
+                                <li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="/hinh-thuc-van-chuyen/">Hình thức vận chuyển</a></li>
+                                <li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="/lien-he/">Liên hệ</a></li>
+                                <li id="menu-item-515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-515"><a href="/tai-khoan/">Tài khoản</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer3 col-md-3 col-sm-3 col-xs-12">
+                    <div id="text-4" class="widget-footer widget_text">
+                        <h3 class="title-sidebar-footer">Facebook</h3>
+                        <div class="textwidget">
+                            <div class="fb-page" data-href="https://www.facebook.com/covekila" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote class="fb-xfbml-parse-ignore" cite="https://www.facebook.com/covekila">
+                                    <p><a href="https://www.facebook.com/covekila">Levantoi.vn</a></p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer4 col-md-3 col-sm-3 col-xs-12">
+                    <div id="text-6" class="widget-footer widget_text">
+                        <h3 class="title-sidebar-footer">Bản đồ</h3>
+                        <div class="textwidget">
+                            <div class="full_mobile"><a href="#" target="_blank"><img src="images/maps.png" alt="" /></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_tags">
+                <div id="woocommerce_product_tag_cloud-2" class="widget-footer woocommerce widget_product_tag_cloud">
+                    <h3 class="title-sidebar-footer">Từ khóa thông dụng</h3>
+                    <div class="tagcloud">
+                        <a href="#" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 22pt;" aria-label="android TV Box (2 sản phẩm)">android TV Box</a>
+                        <a href="/tu-khoa/camera-the-thao/" class="tag-cloud-link tag-link-18 tag-link-position-2" style="font-size: 22pt;" aria-label="Camera thể thao (2 sản phẩm)">Camera thể thao</a>
+                        <a href="/tu-khoa/hdmi/" class="tag-cloud-link tag-link-40 tag-link-position-3" style="font-size: 8pt;" aria-label="hdmi (1 sản phẩm)">hdmi</a>
+                        <a href="/tu-khoa/kiwibox/" class="tag-cloud-link tag-link-17 tag-link-position-4" style="font-size: 22pt;" aria-label="Kiwibox (2 sản phẩm)">Kiwibox</a>
+                        <a href="/tu-khoa/may-chieu/" class="tag-cloud-link tag-link-20 tag-link-position-5" style="font-size: 8pt;" aria-label="máy chiếu (1 sản phẩm)">máy chiếu</a>
+                        <a href="/tu-khoa/o-cam/" class="tag-cloud-link tag-link-19 tag-link-position-6" style="font-size: 8pt;" aria-label="ổ cắm (1 sản phẩm)">ổ cắm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <div class="footer_copyright_left">Copyright © 2017 ShopOnline - All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <div class="box_overlay"></div>
+    <!-- Start Quick Buttons By https://muatheme.com -->
+    <div class='quick-call-button'></div>
+    <div class="show_phone_mobile"><a href="tel:0888090898" title="Gọi ngay"><i class="fa  fa-phone"></i> 0888.090.898</a></div>
+    <link rel='stylesheet' id='lv_css-css' href='css/quick-call-button.css?ver=1.0.3' type='text/css' media='all' />
+    <script type='text/javascript' src='js/scripts.js'></script>
+    <script type='text/javascript' src='js/jquery.validate.min.js'></script>
+    <script type='text/javascript' src='js/jquery.bpopup.min.js'></script>
+    <script type='text/javascript' src='js/underscore.min.js'></script>
+    <script type='text/javascript' src='js/wp-util.min.js'></script>
+    <script type='text/javascript' src='js/add-to-cart-variation.min.js'></script>
+    <script type='text/javascript' src='js/devvn-quick-buy.js'></script>
+    <script type='text/javascript' src='js/devvn_main.js'></script>
+    <script type='text/javascript' src='js/add-to-cart.min.js'></script>
+    <script type='text/javascript' src='js/jquery.blockUI.min.js'></script>
+    <script type='text/javascript' src='js/js.cookie.min.js'></script>
+    <script type='text/javascript' src='js/woocommerce.min.js'></script>
+    <script type='text/javascript' src='js/cart-fragments.min.js'></script>
+    <script type='text/javascript' src='js/wp-embed.min.js'></script>
+    <script type='text/javascript' src='js/drag-quick-call-button.js'></script>
+    <a title="Lên đầu trang" href="#" class="scrollTo_top"><i class="fa fa-arrow-up"></i></a>
+    <div class="cart_floating_right">
+        <div class="cart_floating_right_button"><strong><i class="fa fa-shopping-basket"></i> Giỏ hàng</strong></div>
+        <div class="cart_floating_right_content">
+            <div class="cart_floating_right_title">
+                <span><i class="fa fa-shopping-basket"></i> Giỏ hàng của bạn</span>
+                <span><i class="fa fa-sign-out"></i> Thu nhỏ</span>
+            </div>
+            <div class="cart_floating_right_minicart woocommerce">
+                <div class="floating_popup_cart">
+                    <ul class="cart_list product_list_widget ">
+                        <li class="empty">Chưa có sản phẩm trong giỏ hàng.</li>
+                    </ul><!-- end product list -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    (function($) {
+        $(document).ready(function() {
+            $('.cart_floating_right_button').click(function() {
+                $('.cart_floating_right').addClass('open_float_cart');
+            });
+            $('.cart_floating_right_title').click(function() {
+                $('.cart_floating_right').removeClass('open_float_cart');
+            });
+        });
+    })(jQuery);
+
+    </script>
+</body>
+
+</html>
